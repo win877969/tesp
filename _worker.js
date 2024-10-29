@@ -886,12 +886,12 @@ async function getAllConfigVless(hostName) {
         <div id="clash" class="content">
             ${clashConfigs}
             </div>
-               <footer>
-        ©Develoved by 
-              <a href="https://wa.me/6281335135082"><button class="button877"><img src="https://raw.githubusercontent.com/win877969/NS1/refs/heads/main/img/icon1.png" alt="HTML tutorial" style="width:100px;height:25px;"></button> </a> 
-            
-    </footer>
+               
     </div>
+
+    <footer><div class="watermark"> ©Develoved by 
+              <a href="https://wa.me/6281335135082"><button class="button877"><img src="https://raw.githubusercontent.com/win877969/NS1/refs/heads/main/img/icon1.png" alt="HTML tutorial" style="width:100px;height:25px;"></button> </a> 
+    </footer></div>
      <script>
         function showContent(contentId) {
             const contents = document.querySelectorAll('.content');
