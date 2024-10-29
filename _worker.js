@@ -483,7 +483,44 @@ async function getAllConfigVless(hostName) {
             color: #fff;
             transform: scale(1.05);
         }
-	
+	        .button2 {
+                background-color: #ffa500;
+                border: none;
+                color: #1e1e1e;
+                padding: 6px 12px;
+                text-align: center;
+                text-decoration: none;
+                font-size: 20px;
+                border: 1px solid #3c3c3c;
+                border-radius: 5px;
+                animation: slideIn 0.5s ease-in-out;
+                box-shadow: inset 0 10px 20px rgba(0, 0, 0, 0.5);
+                transition: background-color 0.3s ease, transform 0.2s ease;
+            }
+
+            .button2:hover {
+                background-color: #ff8c00;
+                transform: scale(1.05);
+            }
+        .button877 {
+                background-color: #000000;
+                border: none;
+                color: #000000;
+                padding: 6px 12px;
+                text-align: center;
+                text-decoration: none;
+                font-size: 20px;
+                border: 1px solid #000000;
+                border-radius: 5px;
+                animation: slideIn 0.5s ease-in-out;
+                box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.5);
+                transition: background-color 0.3s ease, transform 0.2s ease;
+            }
+
+            .button877:hover {
+                background-color: #ff8c00;
+                transform: scale(1.05);
+            }
         .container {
             display: flex;
             justify-content: center;
