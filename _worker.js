@@ -619,89 +619,13 @@ async function getAllConfigVless(hostName) {
         </nav>
     </header>
     <div class="container">
-                <div class="card">
+                
             <div class="card__top">
                 <img src="https://raw.githubusercontent.com/win877969/NS1/refs/heads/main/img/icon.png" alt="VLESS logo" loading="lazy">
-  </div></div>
-            <div class="card__content">
-                <div class="rounded-box">
-                    <h2>【 SERVER ID <img src="https://images.emojiterra.com/google/noto-emoji/unicode-15.1/color/128px/1f1ee-1f1e9.png" alt="Singapore Flag" style="width: 24px; height: auto; vertical-align: middle; margin-left: 8px;"> 】</h2>
-
-                    <div class="mytext"> 
-                        <p>✅VLESS Servers Indonesia</p>
-                        <p>✅Bandwidth Unlimited</p>
-                        <p>✅Speed Up To 1 Gbps</p>
-                        <p>✅100% Free Lifetime</p>
-			<P>✅Support Streaming HD</p>
-			<p>✅Status Online</p>
-                        <a class="button" href="https://id.vlesscf.us.kg/vless" target="_blank" rel="noopener noreferrer">VLESS</a>
-                    </div>
-                </div>
-                <div class="rounded-box">
-                  <h2>【 SERVER SG <img src="https://images.emojiterra.com/google/noto-emoji/unicode-15.1/color/128px/1f1f8-1f1ec.png" alt="Singapore Flag" style="width: 24px; height: auto; vertical-align: middle; margin-left: 8px;"> 】</h2>
-
-
-
-                    <div class="mytext">
-                        <p>✅VLESS Servers Singapura</p>
-                        <p>✅Bandwidth Unlimited</p>
-                        <p>✅Speed Up To 1 Gbps</p>
-                        <p>✅100% Free Lifetime</p>
-			<P>✅Support Streaming HD</p>
-			<p>✅Status Online</p>
-                        <a class="button" href="https://amazon.vlesscf.us.kg/vless" target="_blank" rel="noopener noreferrer">VLESS</a>
-                    </div>
-                </div>
-		
-		<div class="rounded-box">
-                  <h2>【 SERVER MY <img src="https://images.emojiterra.com/google/noto-emoji/unicode-15.1/color/128px/1f1f2-1f1fe.png" alt="Malaysia Flag" style="width: 24px; height: auto; vertical-align: middle; margin-left: 8px;"> 】</h2>
-                    <div class="mytext">
-                        <p>✅VLESS Servers Malaysia</p>
-                        <p>✅Bandwidth Unlimited</p>
-                        <p>✅Speed Up To 1 Gbps</p>
-                        <p>✅100% Free Lifetime</p>
-			<P>✅Support Streaming HD</p>
-			<p>✅Status Online</p>
-                        <a class="button" href="https://my.vlesscf.us.kg/vless" target="_blank" rel="noopener noreferrer">VLESS</a>
-                    </div>
-                </div>
-
-		<div class="rounded-box">
-                  <h2>【 SERVER JP <img src="https://images.emojiterra.com/google/noto-emoji/unicode-15.1/color/128px/1f1ef-1f1f5.png" alt="Japan Flag" style="width: 24px; height: auto; vertical-align: middle; margin-left: 8px;"> 】</h2>
-                    <div class="mytext">
-                        <p>✅VLESS Servers Japan</p>
-                        <p>✅Bandwidth Unlimited</p>
-                        <p>✅Speed Up To 1 Gbps</p>
-                        <p>✅100% Free Lifetime</p>
-			<P>✅Support Streaming HD</p>
-			<p>✅Status Online</p>
-                        <a class="button" href="https://jp.vlesscf.us.kg/vless" target="_blank" rel="noopener noreferrer">VLESS</a>
-                    </div>
-                </div>
-		
-	      <div class="rounded-box">
-                  <h2>【 SERVER USA <img src="https://images.emojiterra.com/google/noto-emoji/unicode-15.1/color/128px/1f1fa-1f1f8.png" alt="USA Flag" style="width: 24px; height: auto; vertical-align: middle; margin-left: 8px;"> 】</h2>
-                    <div class="mytext">
-                        <p>✅VLESS Servers United States</p>
-                        <p>✅Bandwidth Unlimited</p>
-                        <p>✅Speed Up To 1 Gbps</p>
-                        <p>✅100% Free Lifetime</p>
-			<P>✅Support Streaming HD</p>
-			<p>✅Status Online</p>
-                        <a class="button" href="https://us.vlesscf.us.kg/vless" target="_blank" rel="noopener noreferrer">VLESS</a>
-                    </div>
-                </div>
-
-                <div class="rounded-box2">
-                    <h3>【 INFORMATION 】</h3>
-                    <h3>*ੈ✩‧₊˚༺☆༻*ੈ✩‧₊˚*ੈ✩‧₊˚༺☆༻*ੈ✩‧₊˚</h3>
-                    <p>100% GRATIS<br>
-                    TANPA EXPIRED ACCOUNT<br>
-                    TIDAK SUPPORT GAME<br>
-                    DAILY UPDATE<br></p>
-                </div>
-            </div>
-        </div>
+  </div>
+  
+  
+  
     </div>
     <footer>
         <p>&copy; 2024 VLESS HUB. All rights reserved.</p>
