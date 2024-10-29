@@ -764,11 +764,38 @@ async function getAllConfigVless(hostName) {
                 font-size: 10px;
             }
         }
+
+             header1 {
+            background: rgba(0, 0, 0, 0.9);
+            padding: 10px 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+        .navbar-brand {
+            color: #f7951e;
+            font-weight: 700;
+        }
+        .navbar-brand:hover {
+            color: #e0e0e0;
+        }
+        .navbar-nav .nav-link {
+            color: #f7951e;
+            font-weight: 700;
+        }
+        .navbar-nav .nav-link:hover {
+            color: #e0e0e0;
+        }
+        
     </style>
 </head>
 <body>
     <div class="overlay">
-           <nav class="navbar navbar-expand-lg navbar-dark">
+               <header1>
+        <nav class="navbar navbar-expand-lg navbar-dark">
             <a class="navbar-brand" href="https://vlesshub.us.kg">VLESS HUB VPN</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -781,6 +808,7 @@ async function getAllConfigVless(hostName) {
                 </ul>
             </div>
         </nav>
+    </header1>
     </div>
     <div class="container">   <p class="noted877">.</p><br><p class="noted877">.</p>
       
