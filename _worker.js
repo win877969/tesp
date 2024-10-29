@@ -764,6 +764,36 @@ async function getAllConfigVless(hostName) {
                 font-size: 10px;
             }
         }
+
+        footer {
+            background: rgba(0, 0, 0, 0.9);
+            color: #e0e0e0;
+            text-align: center;
+            padding: 20px;
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.3);
+            width: 100%;
+            position: relative;
+            bottom: 0;
+            margin: 0;
+        }
+        footer a {
+            color: #f7951e;
+            text-decoration: none;
+            font-weight: 700;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 768px) {
+            .card {
+                width: 100%;
+                margin-top: 20px;
+                max-height: none;
+            }
+            .button {
+                padding: 10px 40px; /* Adjust padding for smaller screens */
+            }
+        }
     </style>
 </head>
 <body>
@@ -817,7 +847,13 @@ async function getAllConfigVless(hostName) {
               <a href="https://wa.me/6281335135082"><button class="button877"><img src="https://raw.githubusercontent.com/win877969/NS1/refs/heads/main/img/icon1.png" alt="HTML tutorial" style="width:100px;height:25px;"></button> </a> 
               </center><p class="noted877">.</p>
         
-    </div>
+    </div>    <footer>
+        <p>&copy; 2024 VLESS HUB. All rights reserved.</p>
+        <p>
+            Follow us on 
+            | <a href="https://t.me/antblacksh" target="_blank" rel="noopener noreferrer">Telegram</a>
+        </p>
+    </footer>
      <script>
         function showContent(contentId) {
             const contents = document.querySelectorAll('.content');
