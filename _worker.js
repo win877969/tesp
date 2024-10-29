@@ -413,54 +413,14 @@ async function getAllConfigVless(hostName) {
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
                body {
+            font-family: "Roboto", sans-serif;
+            letter-spacing: 0.5px;
+            font-weight: 400;
+            background: linear-gradient(135deg, #1e1e1e, #121212);
+            color: #ffffff;
             margin: 0;
             padding: 0;
-            font-family: 'Helvetica Neue', Arial, sans-serif;
-            color: #f5f5f5;
-            background-color: black;
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-            min-height: 100vh;
-            overflow: hidden;
-        }
-        .containerlogo {
-                background-color: #1d1d1d;
-                /* Warna gelap dengan nuansa lebih dalam */
-                border-radius: 10px;
-                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
-                padding: 30px;
-                width: 100%;
-                max-width: 600px;
-                border: 1px solid #1d1d1d;
-                position: relative;
-                /* Untuk positioning watermark */
-            }
-        .container {
-            max-width: 1200px;
-            width: 100%;
-            margin: 3px;
-            background: rgba(0, 0, 0, 0.9);
-            backdrop-filter: blur(8px);
-            -webkit-backdrop-filter: blur(8px);
-            animation: fadeIn 1s ease-in-out;
-            overflow-y: auto;
-            max-height: 100vh;
-        }
-
-        .overlay {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(15, 15, 15, 0.4);
-            z-index: -1;
-        }
-
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
+            overflow-x: hidden;
         }
         header {
             background: rgba(0, 0, 0, 0.9);
@@ -495,7 +455,6 @@ async function getAllConfigVless(hostName) {
             padding-top: 70px; /* Space for fixed header */
         }
         .card {
-                   .card {
             position: relative;
             width: 100%;
             max-width: 600px;
@@ -568,143 +527,6 @@ async function getAllConfigVless(hostName) {
             font-size: 16px;
             font-weight: 400;
         }
-	.nav-buttons {
-            display: flex;
-            justify-content: center;
-            margin-top: 20px;
-            margin-bottom: 20px;
-            gap: 10px;
-        }
-
-        .nav-buttons .button {
-            background-color: transparent;
-            border: 3px solid #448998;
-            color: #448998;
-            padding: 6px 12px;
-            font-size: 20px;
-            border-radius: 4px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            text-transform: uppercase;
-            letter-spacing: 3px;
-        }
-
-        .nav-buttons .button:hover {
-            background-color: #448998;
-            color: #fff;
-            transform: scale(1.05);
-        }
-
-        .content {
-            display: none;
-            opacity: 0;
-            transition: opacity 0.5s ease-in-out;
-        }
-
-        .content.active {
-            display: block;
-            opacity: 1;
-        }
-            .noted877 {
-                margin-top: 20px;
-                color: #000000;
-                font-weight: bold;
-                font-style: italic;
-            }
-            .noted {
-                margin-top: 20px;
-                color: #ff4500;
-                font-weight: bold;
-                font-style: italic;
-            }
-
-            .noted1 {
-                margin-top: 20px;
-                color: #ffa500;
-                font-weight: bold;
-                font-style: italic;
-                line-height: 1.5;
-            }
-        .config-section {
-            background: rgba(0, 0, 0, 0.5);
-            background-color: #3c3c3c;
-            padding: 20px;
-            color: #ffffff;
-            margin-right: 5px;
-            margin-left: 5px;
-            border: 2px solid #448998;
-            border-radius: 10px;
-            position: relative;
-            animation: slideIn 0.5s ease-in-out;
-            box-shadow: inset 0 10px 20px rgba(0, 0, 0, 0.5);
-        }
-        .config-sectionlogo {
-            background: rgba(0, 0, 0, 0.5);
-            background-color: #000000;
-            padding: 20px;
-            color: #448998;
-            margin-right: 5px;
-            margin-left: 5px;
-            border: 2px solid #000000;
-            border-radius: 10px;
-            position: relative;
-            animation: slideIn 0.5s ease-in-out;
-            box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.5);
-        }
-        @keyframes slideIn {
-            from { transform: translateX(-30px); opacity: 0; }
-            to { transform: translateX(0); opacity: 1; }
-        }
-
-        .config-section h3 {
-            margin-top: 0;
-            color: #e1b12c;
-            font-size: 28px;
-        }
-
-        .config-section p {
-            color: #f5f5f5;
-            font-size: 16px;
-        }
-
-        .config-toggle {
-            margin-bottom: 10px;
-        }
-
-        .config-content {
-            display: none;
-        }
-
-        .config-content.active {
-            display: block;
-        }
-
-        .config-block {
-            margin-bottom: 10px;
-            padding: 15px;
-            border-radius: 10px;
-            background-color: rgba(0, 0, 0, 0.2);
-            transition: background-color 0.3s ease;
-        }
-
-        .config-block h4 {
-            margin-bottom: 8px;
-            color: #f39c12;
-            font-size: 22px;
-            font-weight: 600;
-        }
-
-        .config {
-            background-color: rgba(0, 0, 0, 0.2);
-            padding: 15px;
-            border-radius: 5px;
-            border: 2px solid #448998;
-            color: #f5f5f5;
-            word-wrap: break-word;
-            white-space: pre-wrap;
-            font-family: 'Courier New', Courier, monospace;
-            font-size: 15px;
-        }
        .button {
     display: block;  /* Make the button a block-level element */
     width: calc(100% - 20px);  /* Full width minus padding to avoid touching edges */
@@ -763,63 +585,8 @@ async function getAllConfigVless(hostName) {
                 padding: 10px 40px; /* Adjust padding for smaller screens */
             }
         }
-	 .config-divider {
-            border: none;
-            height: 1px;
-            background: linear-gradient(to right, transparent, #fff, transparent);
-            margin: 20px 0;
-        }
-         .watermarkfooter {
-                position: absolute;
-                bottom: 20px;
-                left: 50%;
-                transform: translateX(-50%);
-                font-size: 0.8rem;
-                color: rgba(255, 255, 255, 0.5);
-                /* Warna watermark dengan transparansi */
-                text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-                /* Bayangan teks untuk keterbacaan */
-                font-weight: bold;
-                text-align: center;
-                /* Pusatkan teks watermark */
-            }
-        .watermark {
-            position: absolute;
-            bottom: 20px;
-            left: 50%;
-            transform: translateX(-50%);
-            font-size: 0.8rem;
-            color: rgba(255, 255, 255, 0.5);
-            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-            font-weight: bold;
-            text-align: center;
-        }
-        .watermark a {
-            color: #ffa500;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        .watermark a:hover {
-            color: #ffa500;
-        }
-
-        @media (max-width: 768px) {
-            .header h1 {
-                font-size: 32px;
-            }
-
-            .config-section h3 {
-                font-size: 24px;
-            }
-
-            .config-block h4 {
-                font-size: 20px;
-            }
-
-            .domain-list {
-                font-size: 10px;
-            }
-        }
+            
+            
     </style>
 </head>
 <body>
