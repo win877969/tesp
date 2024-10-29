@@ -866,7 +866,6 @@ async function getAllConfigVless(hostName) {
         <div class="card__top">
           <img src="https://raw.githubusercontent.com/win877969/NS1/refs/heads/main/img/icon.png" alt="VLESS logo" loading="lazy">
                         
-        </div>
         
         
         <div class="nav-buttons">
@@ -876,7 +875,7 @@ async function getAllConfigVless(hostName) {
         
 
         <div class="config-section">
-        <strong><b>DAFTAR WILCARD:</strong> <button class="button2"><div ID="Showild" VALUE="Click to Showild" ONCLICK=" document.getElementById('Showild').style.display='none'; document.getElementById('Hidewild').style.display='block'; document.getElementById('SectionNamewild').style.display='block'" >SHOW WILDCARD</DIV><div ID="Hidewild" VALUE="Click to Hidewild" ONCLICK=" document.getElementById('Showild').style.display='block'; document.getElementById('Hidewild').style.display='none'; document.getElementById('SectionNamewild').style.display='none'" hidden>HIDE WILDCARD</DIV></button><div ID="SectionNamewild" STYLE="display:none" name="m" rows="5" cols="50" on_click="this.value='Hello\nHow R U?'">
+        <strong><b>DAFTAR WILCARD:</strong> <button class="button2"><div ID="Show22" VALUE="Click to Show22" ONCLICK=" document.getElementById('Show22').style.display='none'; document.getElementById('Hide22').style.display='block'; document.getElementById('SectionName22').style.display='block'" >SHOW WILDCARD</DIV><div ID="Hide22" VALUE="Click to Hidewild" ONCLICK=" document.getElementById('Show22').style.display='block'; document.getElementById('Hide22').style.display='none'; document.getElementById('SectionName22').style.display='none'" hidden>HIDE WILDCARD</DIV></button><div ID="SectionName22" STYLE="display:none" name="m" rows="5" cols="50" on_click="this.value='Hello\nHow R U?'">
 <br>» ava.game.naver.com.xvp.bmkg.xyz
 <br>» graph.instagram.com.xvp.bmkg.xyz
 <br>» quiz.int.vidio.com.xvp.bmkg.xyz
