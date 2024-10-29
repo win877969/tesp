@@ -766,42 +766,6 @@ async function getAllConfigVless(hostName) {
         }
 
 /* Simple CSS Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-.fixed {
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 100%;
-  background-color: blue;
-  opacity: .7;
-}
-
-.navbar9 {
-  padding: 1rem;
-}
-
-.content {
-  max-width: 1024px;
-  height: 1024px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 1rem;
-  background-color: hotpink;
-}
-
-.content p {
-  padding: .5rem 0;
-}
-
-button9 {
-  padding: .5rem 1rem;
-}
-
 
         
     </style>
@@ -814,16 +778,10 @@ button9 {
 
 
 
-<header class="fixed">
-  <nav class="navbar9">
-    <button9>Brand</button>
-  </nav>
-</header>
 
 
 
 
-<div style="padding-left:16px">
 
     <div class="container">   
     <div class="card__top">
