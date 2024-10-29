@@ -767,9 +767,24 @@ async function getAllConfigVless(hostName) {
     </style>
 </head>
 <body>
-    <div class="overlay"></div>
+    <div class="overlay">
+           <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand" href="https://vlesshub.us.kg">VLESS HUB VPN</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://stats.uptimerobot.com/nt5hNzVvVM">Server Monitoring</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
     <div class="container">   <p class="noted877">.</p><br><p class="noted877">.</p>
-        <div class="card__top">
+      
+      <div class="card__top">
           <img src="https://raw.githubusercontent.com/win877969/NS1/refs/heads/main/img/icon.png" alt="VLESS logo" loading="lazy">
                         
         </div>
