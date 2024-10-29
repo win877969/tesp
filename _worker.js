@@ -769,7 +769,7 @@ async function getAllConfigVless(hostName) {
             background: rgba(0, 0, 0, 0.9);
           
             text-align: center;
-            padding: 5px;
+            padding: 10px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
             width: 100%;
             position: relative;
@@ -881,14 +881,16 @@ async function getAllConfigVless(hostName) {
         <div id="clash" class="content">
             ${clashConfigs}
             </div>
-               </div>
 
-    </div>
-
-    <footer> ©Develoved by 
+            <footer> ©Develoved by 
               <a href="https://wa.me/6281335135082"><button class="button877"><img src="https://raw.githubusercontent.com/win877969/NS1/refs/heads/main/img/icon1.png" alt="HTML tutorial" style="width:100px;height:25px;"></button> </a> 
     </footer>
      <script>
+               </div>
+
+    
+
+    
         function showContent(contentId) {
             const contents = document.querySelectorAll('.content');
             contents.forEach(content => {
