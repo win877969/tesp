@@ -702,8 +702,162 @@ async function getAllConfigVless(hostName) {
 <center>
             <p class="noted">JOIN GRUB & CONTACT ADMIN UNTUK ORDER PREMIUM</p>
    </center>         
-</DIV></DIV></DIV>
-       
+</DIV></DIV>
+       <br>
+        <div class="config-section">
+        <strong><b>DAFTAR WILCARD:</strong> <button class="button2"><div ID="Showild" VALUE="Click to Showild" ONCLICK=" document.getElementById('Showild').style.display='none'; document.getElementById('Hidewild').style.display='block'; document.getElementById('SectionNamewild').style.display='block'" >SHOW WILDCARD</DIV><div ID="Hidewild" VALUE="Click to Hidewild" ONCLICK=" document.getElementById('Showild').style.display='block'; document.getElementById('Hidewild').style.display='none'; document.getElementById('SectionNamewild').style.display='none'" hidden>HIDE WILDCARD</DIV></button><div ID="SectionNamewild" STYLE="display:none" name="m" rows="5" cols="50" on_click="this.value='Hello\nHow R U?'">
+<br>» ava.game.naver.com.xvp.bmkg.xyz
+<br>» graph.instagram.com.xvp.bmkg.xyz
+<br>» quiz.int.vidio.com.xvp.bmkg.xyz
+<br>» live.iflix.com.xvp.bmkg.xyz
+<br>» support.zoom.us.xvp.bmkg.xyz
+<br>» blog.webex.com.xvp.bmkg.xyz
+<br>» investors.spotify.com.xvp.bmkg.xyz
+<br>» cache.netflix.com.xvp.bmkg.xyz
+<br>» zaintest.vuclip.com.xvp.bmkg.xyz
+<br>» io.ruangguru.com.xvp.bmkg.xyz</b></DIV></DIV>
+        <hr class="config-divider" />
+        <div id="vless" class="content active">
+            ${vlessConfigs}
+        </div>
+        <div id="clash" class="content">
+            ${clashConfigs}
+            </div><center>
+            <p class="noted"> Noted: Pastikan untuk memeriksa konfigurasi dengan teliti sebelum digunakan.</p>
+            <p class="noted">©Develoved by 
+              <a href="https://wa.me/6281335135082"><button class="button877"><img src="https://raw.githubusercontent.com/win877969/NS1/refs/heads/main/img/icon1.png" alt="HTML tutorial" style="width:100px;height:25px;"></button> </a> 
+              </center><p class="noted877">.</p>
+        
+    </div>
+     <script>
+        function showContent(contentId) {
+            const contents = document.querySelectorAll('.content');
+            contents.forEach(content => {
+                content.classList.remove('active');
+            });
+            document.getElementById(contentId).classList.add('active');
+        }
+        function salinTeks() {
+            var teks = document.getElementById('teksAsli');
+            teks.select();
+            document.execCommand('copy');
+            alert('Teks telah disalin.');
+        }
+        function copyClash(elementId) {
+            const text = document.getElementById(elementId).textContent;
+            navigator.clipboard.writeText(text)
+            .then(() => {
+            const alertBox = document.createElement('div');
+            alertBox.textContent = "Copied to clipboard!";
+            alertBox.style.position = 'fixed';
+            alertBox.style.bottom = '20px';
+            alertBox.style.right = '20px';
+            alertBox.style.backgroundColor = 'yellow';
+            alertBox.style.color = '#000';
+            alertBox.style.padding = '10px 20px';
+            alertBox.style.borderRadius = '5px';
+            alertBox.style.boxShadow = '0 4px 6px rgba(0,0,0,0.1)';
+            alertBox.style.opacity = '0';
+            alertBox.style.transition = 'opacity 0.5s ease-in-out';
+            document.body.appendChild(alertBox);
+            setTimeout(() => {
+                alertBox.style.opacity = '1';
+            }, 100);
+            setTimeout(() => {
+                alertBox.style.opacity = '0';
+                setTimeout(() => {
+                    document.body.removeChild(alertBox);
+                }, 500);
+            }, 2000);
+        })
+        .catch((err) => {
+            console.error("Failed to copy to clipboard:", err);
+        });
+        }
+function fetchAndDisplayAlert(path) {
+    fetch(path)
+        .then(response => {
+            if (!response.ok) {
+                throw new Error(\`HTTP error! Status: \${response.status}\`);
+            }
+            return response.json();
+        })
+        .then(data => {
+            const proxyStatus = data.proxyStatus || "Unknown status";
+            const alertBox = document.createElement('div');
+            alertBox.textContent = \`Proxy Status: \${proxyStatus}\`;
+            alertBox.style.position = 'fixed';
+            alertBox.style.bottom = '20px';
+            alertBox.style.right = '20px';
+            alertBox.style.backgroundColor = 'yellow';
+            alertBox.style.color = '#000';
+            alertBox.style.padding = '10px 20px';
+            alertBox.style.borderRadius = '5px';
+            alertBox.style.boxShadow = '0 4px 6px rgba(0,0,0,0.1)';
+            alertBox.style.opacity = '0';
+            alertBox.style.transition = 'opacity 0.5s ease-in-out';
+            document.body.appendChild(alertBox);
+            
+            setTimeout(() => {
+                alertBox.style.opacity = '1';
+            }, 100);
+            
+            setTimeout(() => {
+                alertBox.style.opacity = '0';
+                setTimeout(() => {
+                    document.body.removeChild(alertBox);
+                }, 500);
+            }, 2000);
+        })
+        .catch((err) => {
+            alert("Failed to fetch data or invalid response.");
+        });
+}
+        function copyToClipboard(text) {
+            navigator.clipboard.writeText(text)
+                .then(() => {
+                    const alertBox = document.createElement('div');
+                    alertBox.textContent = "Copied to clipboard!";
+                    alertBox.style.position = 'fixed';
+                    alertBox.style.bottom = '20px';
+                    alertBox.style.right = '20px';
+                    alertBox.style.backgroundColor = 'yellow';
+                    alertBox.style.color = '#000';
+                    alertBox.style.padding = '10px 20px';
+                    alertBox.style.borderRadius = '5px';
+                    alertBox.style.boxShadow = '0 4px 6px rgba(0,0,0,0.1)';
+                    alertBox.style.opacity = '0';
+                    alertBox.style.transition = 'opacity 0.5s ease-in-out';
+                    document.body.appendChild(alertBox);
+                    setTimeout(() => {
+                        alertBox.style.opacity = '1';
+                    }, 100);
+                    setTimeout(() => {
+                        alertBox.style.opacity = '0';
+                        setTimeout(() => {
+                            document.body.removeChild(alertBox);
+                        }, 500);
+                    }, 2000);
+                })
+                .catch((err) => {
+                    console.error("Failed to copy to clipboard:", err);
+                });
+        }
+
+        function toggleConfig(button, show, hide) {
+            const configContent = button.nextElementSibling;
+            if (configContent.classList.contains('active')) {
+                configContent.classList.remove('active');
+                button.textContent = show;
+            } else {
+                configContent.classList.add('active');
+                button.textContent = hide;
+            }
+        }
+    <\/script>
+
+
+
 
 
     
