@@ -619,9 +619,9 @@ async function getAllConfigVless(hostName) {
                 </ul>
             </div>
         </nav>
-    </header><div class="overlay"></div>
+    </header>
     <div class="container">
-                <p class="noted877">.</p>
+
             <div class="card__top">
                 <img src="https://raw.githubusercontent.com/win877969/NS1/refs/heads/main/img/icon.png" alt="VLESS logo" loading="lazy">
   </div></div>
