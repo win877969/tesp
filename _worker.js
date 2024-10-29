@@ -619,10 +619,10 @@ async function getAllConfigVless(hostName) {
         </nav>
     </header>
     <div class="container">
-        
+                <div class="card">
             <div class="card__top">
                 <img src="https://raw.githubusercontent.com/win877969/NS1/refs/heads/main/img/icon.png" alt="VLESS logo" loading="lazy">
-  </div>
+  </div></div>
             <div class="card__content">
                 <div class="rounded-box">
                     <h2>【 SERVER ID <img src="https://images.emojiterra.com/google/noto-emoji/unicode-15.1/color/128px/1f1ee-1f1e9.png" alt="Singapore Flag" style="width: 24px; height: auto; vertical-align: middle; margin-left: 8px;"> 】</h2>
