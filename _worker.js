@@ -415,7 +415,18 @@ async function getAllConfigVless(hostName) {
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
-
+        body1 {
+            margin: 0;
+            padding: 0;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            color: #f5f5f5;
+            background-color: black;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            min-height: 100vh;
+            overflow: hidden;
+        }
         body {
             margin: 0;
             padding: 0;
@@ -821,7 +832,7 @@ async function getAllConfigVless(hostName) {
         
     </style>
 </head>
-
+<body1>
     <header2>
         <nav class="navbar navbar-expand-lg navbar-dark">
             <a class="navbar1-brand" href="https://vlesshub.us.kg">VLESS HUB VPN</a>
@@ -836,9 +847,9 @@ async function getAllConfigVless(hostName) {
                 </ul>
             </div>
         </nav>
-    </header2><body>
+    </header2></body1><body>
     <div class="overlay">
-    <div class="container">    </div> 
+    <div class="container">  <p class="noted877">.</p> <p class="noted877">.</p> </div> 
       <div class="card__top">
           <img src="https://raw.githubusercontent.com/win877969/NS1/refs/heads/main/img/icon.png" alt="VLESS logo" loading="lazy">
                         
