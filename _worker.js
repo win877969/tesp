@@ -408,113 +408,53 @@ async function getAllConfigVless(hostName) {
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4C+6PCWJ+8zzHcXQjXGp6n5Yh9rX0x5fOdPaOqO+e2X4R5C1aE/BSqPIG+8y3O6APa8w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="icon" href="https://raw.githubusercontent.com/win877969/NS1/refs/heads/main/img/icon.png" type="image/png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
-
-        body {
+       body {
+            font-family: "Roboto", sans-serif;
+            letter-spacing: 0.5px;
+            font-weight: 400;
+            background: linear-gradient(135deg, #1e1e1e, #121212);
+            color: #ffffff;
             margin: 0;
             padding: 0;
-            font-family: 'Helvetica Neue', Arial, sans-serif;
-            color: #f5f5f5;
-            background-color: black;
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-            min-height: 100vh;
-            overflow: hidden;
+            overflow-x: hidden;
         }
-        .containerlogo {
-                background-color: #1d1d1d;
-                /* Warna gelap dengan nuansa lebih dalam */
-                border-radius: 10px;
-                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
-                padding: 30px;
-                width: 100%;
-                max-width: 600px;
-                border: 1px solid #1d1d1d;
-                position: relative;
-                /* Untuk positioning watermark */
-            }
-        .container {
-            max-width: 1200px;
-            width: 100%;
-            margin: 3px;
+        header {
             background: rgba(0, 0, 0, 0.9);
-            backdrop-filter: blur(8px);
-            -webkit-backdrop-filter: blur(8px);
-            animation: fadeIn 1s ease-in-out;
-            overflow-y: auto;
-            max-height: 100vh;
-        }
-
-        .overlay {
+            padding: 10px 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
             position: fixed;
+            width: 100%;
             top: 0;
             left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(15, 15, 15, 0.4);
-            z-index: -1;
+            z-index: 1000;
         }
-
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
-        .header {
-            text-align: center;
-            margin-bottom: 40px;
-            margin-top: 10px;
-        }
-
-        .header h1 {
-            font-size: 42px;
-            color: #448998;
-            margin: 0;
+        .navbar-brand {
+            color: #f7951e;
             font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 4px;
         }
-        .button2 {
-                background-color: #ffa500;
-                border: none;
-                color: #1e1e1e;
-                padding: 6px 12px;
-                text-align: center;
-                text-decoration: none;
-                font-size: 20px;
-                border: 1px solid #3c3c3c;
-                border-radius: 5px;
-                animation: slideIn 0.5s ease-in-out;
-                box-shadow: inset 0 10px 20px rgba(0, 0, 0, 0.5);
-                transition: background-color 0.3s ease, transform 0.2s ease;
-            }
-
-            .button2:hover {
-                background-color: #ff8c00;
-                transform: scale(1.05);
-            }
-        .button877 {
-                background-color: #000000;
-                border: none;
-                color: #000000;
-                padding: 6px 12px;
-                text-align: center;
-                text-decoration: none;
-                font-size: 20px;
-                border: 1px solid #000000;
-                border-radius: 5px;
-                animation: slideIn 0.5s ease-in-out;
-                box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.5);
-                transition: background-color 0.3s ease, transform 0.2s ease;
-            }
-
-            .button877:hover {
-                background-color: #ff8c00;
-                transform: scale(1.05);
-            }
-           .card {
+        .navbar-brand:hover {
+            color: #e0e0e0;
+        }
+        .navbar-nav .nav-link {
+            color: #f7951e;
+            font-weight: 700;
+        }
+        .navbar-nav .nav-link:hover {
+            color: #e0e0e0;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+            padding-top: 70px; /* Space for fixed header */
+        }
+        .card {
             position: relative;
             width: 100%;
             max-width: 600px;
@@ -543,466 +483,233 @@ async function getAllConfigVless(hostName) {
             object-fit: cover;
             display: block;
         }
-        .nav-buttons {
+        .card__content {
+            text-align: center;
             display: flex;
-            justify-content: center;
-            margin-top: 20px;
-            margin-bottom: 20px;
-            gap: 10px;
+            flex-direction: column;
+            align-items: center;
         }
-
-        .nav-buttons .button {
-            background-color: transparent;
-            border: 3px solid #448998;
-            color: #448998;
-            padding: 6px 12px;
-            font-size: 20px;
-            border-radius: 4px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            text-transform: uppercase;
-            letter-spacing: 3px;
-        }
-
-        .nav-buttons .button:hover {
-            background-color: #448998;
-            color: #fff;
-            transform: scale(1.05);
-        }
-
-        .content {
-            display: none;
-            opacity: 0;
-            transition: opacity 0.5s ease-in-out;
-        }
-
-        .content.active {
-            display: block;
-            opacity: 1;
-        }
-            .noted877 {
-                margin-top: 20px;
-                color: #000000;
-                font-weight: bold;
-                font-style: italic;
-            }
-            .noted {
-                margin-top: 20px;
-                color: #ff4500;
-                font-weight: bold;
-                font-style: italic;
-            }
-
-            .noted1 {
-                margin-top: 20px;
-                color: #ffa500;
-                font-weight: bold;
-                font-style: italic;
-                line-height: 1.5;
-            }
-        .config-section {
-            background: rgba(0, 0, 0, 0.5);
-            background-color: #3c3c3c;
-            padding: 20px;
-            color: #ffffff;
-            margin-right: 5px;
-            margin-left: 5px;
-            border: 2px solid #448998;
-            border-radius: 10px;
-            position: relative;
-            animation: slideIn 0.5s ease-in-out;
-            box-shadow: inset 0 10px 20px rgba(0, 0, 0, 0.5);
-        }
-        .config-sectionlogo {
-            background: rgba(0, 0, 0, 0.5);
-            background-color: #000000;
-            padding: 20px;
-            color: #448998;
-            margin-right: 5px;
-            margin-left: 5px;
-            border: 2px solid #000000;
-            border-radius: 10px;
-            position: relative;
-            animation: slideIn 0.5s ease-in-out;
-            box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.5);
-        }
-        @keyframes slideIn {
-            from { transform: translateX(-30px); opacity: 0; }
-            to { transform: translateX(0); opacity: 1; }
-        }
-
-        .config-section h3 {
-            margin-top: 0;
-            color: #e1b12c;
-            font-size: 28px;
-        }
-
-        .config-section p {
-            color: #f5f5f5;
-            font-size: 16px;
-        }
-
-        .config-toggle {
-            margin-bottom: 10px;
-        }
-
-        .config-content {
-            display: none;
-        }
-
-        .config-content.active {
-            display: block;
-        }
-
-        .config-block {
-            margin-bottom: 10px;
+        .rounded-box, .rounded-box2 {
             padding: 15px;
-            border-radius: 10px;
-            background-color: rgba(0, 0, 0, 0.2);
-            transition: background-color 0.3s ease;
+            border: 2px solid #fff;
+            border-radius: 8px;
+            background-color: rgba(0, 0, 0, 0.4);
+            margin-bottom: 15px;
+            text-align: center;
+            width: 100%;
+            max-width: 500px;
         }
-
-        .config-block h4 {
-            margin-bottom: 8px;
-            color: #f39c12;
-            font-size: 22px;
+        .rounded-box2 {
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        .rounded-box .info-item, .rounded-box2 .info-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+        .info-item span.label {
             font-weight: 600;
         }
-
-        .config {
-            background-color: rgba(0, 0, 0, 0.2);
-            padding: 15px;
-            border-radius: 5px;
-            border: 2px solid #448998;
-            color: #f5f5f5;
-            word-wrap: break-word;
-            white-space: pre-wrap;
-            font-family: 'Courier New', Courier, monospace;
-            font-size: 15px;
+        .info-item span.value {
+            text-align: right;
         }
-        .button {
-            background-color: transparent;
-            border: 2px solid #448998;
-            color: #448998;
-            padding: 4px 8px;
-            font-size: 12px;
-            border-radius: 3px;
-            cursor: pointer;
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            transition: all 0.3s ease;
-            text-transform: uppercase;
-            letter-spacing: 1.5px;
-            margin-right: 4px;
+        .card__content h1 {
+            font-size: 24px;
+            font-weight: 700;
+            margin: 0 0 15px;
         }
-
-        .button i {
-            margin-right: 3px;
+        .card__content h2 {
+            font-size: 20px;
+            font-weight: 600;
+            margin: 10px 0;
         }
-
+        .card__content h3 {
+            font-size: 16px;
+            font-weight: 400;
+        }
+       .button {
+    display: block;  /* Make the button a block-level element */
+    width: calc(100% - 20px);  /* Full width minus padding to avoid touching edges */
+    max-width: 300px;  /* Optional: Set a maximum width for larger screens */
+    padding: 10px 0;  /* Adjust padding for height */
+    margin: 10px auto;  /* Center the button and add vertical margin */
+    text-align: center;
+    background: #f7951e;
+    color: #fff;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    box-sizing: border-box;  /* Include padding and border in width */
+}
         .button:hover {
-            background-color: #448998;
-            color: #fff;
-            transform: scale(1.0);
+            background: #d67e1e;
+            transform: scale(1.05);
         }
-
-        .config-divider {
-            border: none;
-            height: 1px;
-            background: linear-gradient(to right, transparent, #fff, transparent);
-            margin: 20px 0;
+        .button:active {
+            background: #b76c1d;
+            transform: scale(0.98);
         }
-         .watermarkfooter {
-                position: absolute;
-                bottom: 20px;
-                left: 50%;
-                transform: translateX(-50%);
-                font-size: 0.8rem;
-                color: rgba(255, 255, 255, 0.5);
-                /* Warna watermark dengan transparansi */
-                text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-                /* Bayangan teks untuk keterbacaan */
-                font-weight: bold;
-                text-align: center;
-                /* Pusatkan teks watermark */
-            }
-        .watermark {
-            position: absolute;
-            bottom: 20px;
-            left: 50%;
-            transform: translateX(-50%);
-            font-size: 0.8rem;
-            color: rgba(255, 255, 255, 0.5);
-            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-            font-weight: bold;
+        .button:focus {
+            outline: 2px solid #f7951e;
+            outline-offset: 4px;
+        }
+        .mytext {
+            text-align: left;
+        }
+        footer {
+            background: rgba(0, 0, 0, 0.9);
+            color: #e0e0e0;
             text-align: center;
+            padding: 20px;
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.3);
+            width: 100%;
+            position: relative;
+            bottom: 0;
+            margin: 0;
         }
-        .watermark a {
-            color: #ffa500;
+        footer a {
+            color: #f7951e;
             text-decoration: none;
-            font-weight: bold;
+            font-weight: 700;
         }
-        .watermark a:hover {
-            color: #ffa500;
+        footer a:hover {
+            text-decoration: underline;
         }
-
         @media (max-width: 768px) {
-            .header h1 {
-                font-size: 32px;
+            .card {
+                width: 100%;
+                margin-top: 20px;
+                max-height: none;
             }
-
-            .config-section h3 {
-                font-size: 24px;
-            }
-
-            .config-block h4 {
-                font-size: 20px;
-            }
-
-            .domain-list {
-                font-size: 10px;
+            .button {
+                padding: 10px 40px; /* Adjust padding for smaller screens */
             }
         }
     </style>
-</head> 
-
+</head>
 <body>
-    
-    <div class="container">   <style>
-.sidenav {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
-}
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand" href="https://vlesshub.us.kg">VLESS HUB VPN</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://stats.uptimerobot.com/nt5hNzVvVM">Server Monitoring</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="card">
+            <div class="card__top">
+                <img src="https://i.postimg.cc/vZP1M7s8/VLESS.png" alt="VLESS HUB logo" loading="lazy">
+            </div>
+            <div class="card__content">
+                <div class="rounded-box">
+                    <h2>【 SERVER ID <img src="https://images.emojiterra.com/google/noto-emoji/unicode-15.1/color/128px/1f1ee-1f1e9.png" alt="Singapore Flag" style="width: 24px; height: auto; vertical-align: middle; margin-left: 8px;"> 】</h2>
 
-.sidenav a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
-}
+                    <div class="mytext"> 
+                        <p>✅VLESS Servers Indonesia</p>
+                        <p>✅Bandwidth Unlimited</p>
+                        <p>✅Speed Up To 1 Gbps</p>
+                        <p>✅100% Free Lifetime</p>
+			<P>✅Support Streaming HD</p>
+			<p>✅Status Online</p>
+                        <a class="button" href="https://id.vlesscf.us.kg/vless" target="_blank" rel="noopener noreferrer">VLESS</a>
+                    </div>
+                </div>
+                <div class="rounded-box">
+                  <h2>【 SERVER SG <img src="https://images.emojiterra.com/google/noto-emoji/unicode-15.1/color/128px/1f1f8-1f1ec.png" alt="Singapore Flag" style="width: 24px; height: auto; vertical-align: middle; margin-left: 8px;"> 】</h2>
 
-.sidenav a:hover {
-  color: #f1f1f1;
-}
 
-.sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-}
 
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
-</style>
+                    <div class="mytext">
+                        <p>✅VLESS Servers Singapura</p>
+                        <p>✅Bandwidth Unlimited</p>
+                        <p>✅Speed Up To 1 Gbps</p>
+                        <p>✅100% Free Lifetime</p>
+			<P>✅Support Streaming HD</p>
+			<p>✅Status Online</p>
+                        <a class="button" href="https://amazon.vlesscf.us.kg/vless" target="_blank" rel="noopener noreferrer">VLESS</a>
+                    </div>
+                </div>
+		
+		<div class="rounded-box">
+                  <h2>【 SERVER MY <img src="https://images.emojiterra.com/google/noto-emoji/unicode-15.1/color/128px/1f1f2-1f1fe.png" alt="Malaysia Flag" style="width: 24px; height: auto; vertical-align: middle; margin-left: 8px;"> 】</h2>
+                    <div class="mytext">
+                        <p>✅VLESS Servers Malaysia</p>
+                        <p>✅Bandwidth Unlimited</p>
+                        <p>✅Speed Up To 1 Gbps</p>
+                        <p>✅100% Free Lifetime</p>
+			<P>✅Support Streaming HD</p>
+			<p>✅Status Online</p>
+                        <a class="button" href="https://my.vlesscf.us.kg/vless" target="_blank" rel="noopener noreferrer">VLESS</a>
+                    </div>
+                </div>
 
-<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
-<div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="#">About</a><a href="#">Services</a><a href="#">Clients</a><a href="#">Contact</a>
-</div>
-<script>
-function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
-}
+		<div class="rounded-box">
+                  <h2>【 SERVER JP <img src="https://images.emojiterra.com/google/noto-emoji/unicode-15.1/color/128px/1f1ef-1f1f5.png" alt="Japan Flag" style="width: 24px; height: auto; vertical-align: middle; margin-left: 8px;"> 】</h2>
+                    <div class="mytext">
+                        <p>✅VLESS Servers Japan</p>
+                        <p>✅Bandwidth Unlimited</p>
+                        <p>✅Speed Up To 1 Gbps</p>
+                        <p>✅100% Free Lifetime</p>
+			<P>✅Support Streaming HD</p>
+			<p>✅Status Online</p>
+                        <a class="button" href="https://jp.vlesscf.us.kg/vless" target="_blank" rel="noopener noreferrer">VLESS</a>
+                    </div>
+                </div>
+		
+	      <div class="rounded-box">
+                  <h2>【 SERVER USA <img src="https://images.emojiterra.com/google/noto-emoji/unicode-15.1/color/128px/1f1fa-1f1f8.png" alt="USA Flag" style="width: 24px; height: auto; vertical-align: middle; margin-left: 8px;"> 】</h2>
+                    <div class="mytext">
+                        <p>✅VLESS Servers United States</p>
+                        <p>✅Bandwidth Unlimited</p>
+                        <p>✅Speed Up To 1 Gbps</p>
+                        <p>✅100% Free Lifetime</p>
+			<P>✅Support Streaming HD</p>
+			<p>✅Status Online</p>
+                        <a class="button" href="https://us.vlesscf.us.kg/vless" target="_blank" rel="noopener noreferrer">VLESS</a>
+                    </div>
+                </div>
 
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-}
-</script>
-   
-
-        
-        <div class="card__top">
-          <img src="https://raw.githubusercontent.com/win877969/NS1/refs/heads/main/img/icon.png" alt="VLESS logo" loading="lazy">
-                        
+                <div class="rounded-box2">
+                    <h3>【 INFORMATION 】</h3>
+                    <h3>*ੈ✩‧₊˚༺☆༻*ੈ✩‧₊˚*ੈ✩‧₊˚༺☆༻*ੈ✩‧₊˚</h3>
+                    <p>100% GRATIS<br>
+                    TANPA EXPIRED ACCOUNT<br>
+                    TIDAK SUPPORT GAME<br>
+                    DAILY UPDATE<br></p>
+                </div>
+            </div>
         </div>
-        
-        
-        <div class="nav-buttons">
-            <button class="button2" onclick="showContent('vless')">LIST VLESS</button>
-            <button class="button2" onclick="showContent('clash')">LIST CLASH</button>        </div>
-            
-        
-        <div class="nav-buttons"><center>
-        <button class="button2"><div ID="Showld" VALUE="Click to Showld" ONCLICK=" document.getElementById('Showld').style.display='none'; document.getElementById('Hideld').style.display='block'; document.getElementById('SectionNameld').style.display='block'" >SHOW ME</DIV><div ID="Hideld" VALUE="Click to Hideld" ONCLICK=" document.getElementById('Showld').style.display='block'; document.getElementById('Hideld').style.display='none'; document.getElementById('SectionNameld').style.display='none'" hidden>HIDE ME</DIV></button><div ID="SectionNameld" STYLE="display:none" name="m" rows="5" cols="50" on_click="this.value='Hello\nHow R U?'">
-<br><br><a href="http://wa.me/6287861167414"><img src="https://raw.githubusercontent.com/win877969/NS1/refs/heads/main/img/social.png" alt="HTML tutorial" style="width:42px;height:42px;"></a>
-&nbsp; &nbsp;<a href="http://t.me/seaker877 "><img src="https://raw.githubusercontent.com/win877969/NS1/refs/heads/main/img/telegram.png" alt="HTML tutorial" style="width:42px;height:42px;"></a>
-&nbsp; &nbsp;<a href="https://chat.whatsapp.com/L9bbkRbzyozEFJHgGc9pPh"><img src="https://raw.githubusercontent.com/win877969/NS1/refs/heads/main/img/pngwing.com.png" alt="HTML tutorial" style="width:42px;height:42px;"></a>
-<center>
-            <p class="noted">JOIN GRUB & CONTACT ADMIN UNTUK ORDER PREMIUM</p>
-   </center>         
-</DIV></DIV>
-       
-           
-                  
-<br>
-        <div class="config-section">
-        <strong><b>DAFTAR WILCARD:</strong> <button class="button2"><div ID="Showild" VALUE="Click to Showild" ONCLICK=" document.getElementById('Showild').style.display='none'; document.getElementById('Hidewild').style.display='block'; document.getElementById('SectionNamewild').style.display='block'" >SHOW WILDCARD</DIV><div ID="Hidewild" VALUE="Click to Hidewild" ONCLICK=" document.getElementById('Showild').style.display='block'; document.getElementById('Hidewild').style.display='none'; document.getElementById('SectionNamewild').style.display='none'" hidden>HIDE WILDCARD</DIV></button><div ID="SectionNamewild" STYLE="display:none" name="m" rows="5" cols="50" on_click="this.value='Hello\nHow R U?'">
-<br>» ava.game.naver.com.xvp.bmkg.xyz
-<br>» graph.instagram.com.xvp.bmkg.xyz
-<br>» quiz.int.vidio.com.xvp.bmkg.xyz
-<br>» live.iflix.com.xvp.bmkg.xyz
-<br>» support.zoom.us.xvp.bmkg.xyz
-<br>» blog.webex.com.xvp.bmkg.xyz
-<br>» investors.spotify.com.xvp.bmkg.xyz
-<br>» cache.netflix.com.xvp.bmkg.xyz
-<br>» zaintest.vuclip.com.xvp.bmkg.xyz
-<br>» io.ruangguru.com.xvp.bmkg.xyz</b></DIV></DIV>
-        <hr class="config-divider" />
-        <div id="vless" class="content active">
-            ${vlessConfigs}
-        </div>
-        <div id="clash" class="content">
-            ${clashConfigs}
-            </div><center>
-            <p class="noted"> Noted: Pastikan untuk memeriksa konfigurasi dengan teliti sebelum digunakan.</p>
-            <p class="noted">©Develoved by 
-              <a href="https://wa.me/6281335135082"><button class="button877"><img src="https://raw.githubusercontent.com/win877969/NS1/refs/heads/main/img/icon1.png" alt="HTML tutorial" style="width:100px;height:25px;"></button> </a> 
-              </center><p class="noted877">.</p>
-        
     </div>
-     <script>
-        function showContent(contentId) {
-            const contents = document.querySelectorAll('.content');
-            contents.forEach(content => {
-                content.classList.remove('active');
-            });
-            document.getElementById(contentId).classList.add('active');
+    <footer>
+        <p>&copy; 2024 VLESS HUB. All rights reserved.</p>
+        <p>
+            Follow us on 
+            | <a href="https://t.me/antblacksh" target="_blank" rel="noopener noreferrer">Telegram</a>
+        </p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "VLESS HUB VPN",
+        "description": "Free akun VLESS gratis dengan server dari Indonesia, Singapura dan beberapa server negara lainnya. Akses VPN tanpa batas dengan update harian dan tanpa expired account.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "VLESS HUB"
         }
-        function salinTeks() {
-            var teks = document.getElementById('teksAsli');
-            teks.select();
-            document.execCommand('copy');
-            alert('Teks telah disalin.');
-        }
-        function copyClash(elementId) {
-            const text = document.getElementById(elementId).textContent;
-            navigator.clipboard.writeText(text)
-            .then(() => {
-            const alertBox = document.createElement('div');
-            alertBox.textContent = "Copied to clipboard!";
-            alertBox.style.position = 'fixed';
-            alertBox.style.bottom = '20px';
-            alertBox.style.right = '20px';
-            alertBox.style.backgroundColor = 'yellow';
-            alertBox.style.color = '#000';
-            alertBox.style.padding = '10px 20px';
-            alertBox.style.borderRadius = '5px';
-            alertBox.style.boxShadow = '0 4px 6px rgba(0,0,0,0.1)';
-            alertBox.style.opacity = '0';
-            alertBox.style.transition = 'opacity 0.5s ease-in-out';
-            document.body.appendChild(alertBox);
-            setTimeout(() => {
-                alertBox.style.opacity = '1';
-            }, 100);
-            setTimeout(() => {
-                alertBox.style.opacity = '0';
-                setTimeout(() => {
-                    document.body.removeChild(alertBox);
-                }, 500);
-            }, 2000);
-        })
-        .catch((err) => {
-            console.error("Failed to copy to clipboard:", err);
-        });
-        }
-function fetchAndDisplayAlert(path) {
-    fetch(path)
-        .then(response => {
-            if (!response.ok) {
-                throw new Error(\`HTTP error! Status: \${response.status}\`);
-            }
-            return response.json();
-        })
-        .then(data => {
-            const proxyStatus = data.proxyStatus || "Unknown status";
-            const alertBox = document.createElement('div');
-            alertBox.textContent = \`Proxy Status: \${proxyStatus}\`;
-            alertBox.style.position = 'fixed';
-            alertBox.style.bottom = '20px';
-            alertBox.style.right = '20px';
-            alertBox.style.backgroundColor = 'yellow';
-            alertBox.style.color = '#000';
-            alertBox.style.padding = '10px 20px';
-            alertBox.style.borderRadius = '5px';
-            alertBox.style.boxShadow = '0 4px 6px rgba(0,0,0,0.1)';
-            alertBox.style.opacity = '0';
-            alertBox.style.transition = 'opacity 0.5s ease-in-out';
-            document.body.appendChild(alertBox);
-            
-            setTimeout(() => {
-                alertBox.style.opacity = '1';
-            }, 100);
-            
-            setTimeout(() => {
-                alertBox.style.opacity = '0';
-                setTimeout(() => {
-                    document.body.removeChild(alertBox);
-                }, 500);
-            }, 2000);
-        })
-        .catch((err) => {
-            alert("Failed to fetch data or invalid response.");
-        });
-}
-        function copyToClipboard(text) {
-            navigator.clipboard.writeText(text)
-                .then(() => {
-                    const alertBox = document.createElement('div');
-                    alertBox.textContent = "Copied to clipboard!";
-                    alertBox.style.position = 'fixed';
-                    alertBox.style.bottom = '20px';
-                    alertBox.style.right = '20px';
-                    alertBox.style.backgroundColor = 'yellow';
-                    alertBox.style.color = '#000';
-                    alertBox.style.padding = '10px 20px';
-                    alertBox.style.borderRadius = '5px';
-                    alertBox.style.boxShadow = '0 4px 6px rgba(0,0,0,0.1)';
-                    alertBox.style.opacity = '0';
-                    alertBox.style.transition = 'opacity 0.5s ease-in-out';
-                    document.body.appendChild(alertBox);
-                    setTimeout(() => {
-                        alertBox.style.opacity = '1';
-                    }, 100);
-                    setTimeout(() => {
-                        alertBox.style.opacity = '0';
-                        setTimeout(() => {
-                            document.body.removeChild(alertBox);
-                        }, 500);
-                    }, 2000);
-                })
-                .catch((err) => {
-                    console.error("Failed to copy to clipboard:", err);
-                });
-        }
-
-        function toggleConfig(button, show, hide) {
-            const configContent = button.nextElementSibling;
-            if (configContent.classList.contains('active')) {
-                configContent.classList.remove('active');
-                button.textContent = show;
-            } else {
-                configContent.classList.add('active');
-                button.textContent = hide;
-            }
-        }
-    <\/script>
-</body>
+    }
+    </script>
 </html>`;
     return htmlConfigs;
   } catch (error) {
