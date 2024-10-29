@@ -884,7 +884,7 @@ async function getAllConfigVless(hostName) {
 
             <footer> ©Develoved by 
               <a href="https://wa.me/6281335135082"><button class="button877"><img src="https://raw.githubusercontent.com/win877969/NS1/refs/heads/main/img/icon1.png" alt="HTML tutorial" style="width:100px;height:25px;"></button> </a> 
-    </footer>
+    </footer><p class="noted877">.<br></p>
      <script>
                </div>
 
