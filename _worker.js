@@ -767,12 +767,10 @@ async function getAllConfigVless(hostName) {
     </style>
 </head>
 <body><div class="overlay">
-
+<p class="noted">.</p>
 </div>
-center>
-            <p class="noted">.</p>
-            <p class="noted">.</p> 
-              </center>
+            
+            
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 .topnav {
@@ -829,7 +827,10 @@ center>
 
 
 <div class="topnav" id="myTopnav">
-  <a href="#home" class="active">Home</a>
+  <a href="#home" class="active"><a href="http://wa.me/6287861167414"><img src="https://raw.githubusercontent.com/win877969/NS1/refs/heads/main/img/social.png" alt="HTML tutorial" style="width:42px;height:42px;"></a>
+&nbsp; &nbsp;<a href="http://t.me/seaker877 "><img src="https://raw.githubusercontent.com/win877969/NS1/refs/heads/main/img/telegram.png" alt="HTML tutorial" style="width:42px;height:42px;"></a>
+&nbsp; &nbsp;<a href="https://chat.whatsapp.com/L9bbkRbzyozEFJHgGc9pPh"><img src="https://raw.githubusercontent.com/win877969/NS1/refs/heads/main/img/pngwing.com.png" alt="HTML tutorial" style="width:42px;height:42px;"></a>
+</a>
   <a href="#news">News</a>
   <a href="#contact">Contact</a>
   <a href="#about">About</a>
