@@ -768,7 +768,67 @@ async function getAllConfigVless(hostName) {
 </head>
 <body>
     <div class="overlay"></div>
-    <p class="noted877">.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<div class="card__top">
+    <div class="container">   <p class="noted877">.</p><br><p class="noted877">.</p>
+       <style>
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+</head>
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">About</a><a href="#">Services</a><a href="#">Clients</a><a href="#">Contact</a>
+</div>
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+   
+</html> 
+
+        
+        <div class="card__top">
           <img src="https://raw.githubusercontent.com/win877969/NS1/refs/heads/main/img/icon.png" alt="VLESS logo" loading="lazy">
                         
         </div>
@@ -787,9 +847,11 @@ async function getAllConfigVless(hostName) {
 <center>
             <p class="noted">JOIN GRUB & CONTACT ADMIN UNTUK ORDER PREMIUM</p>
    </center>         
-</DIV> </DIV></p>
-        
-    <div class="container"> 
+</DIV></DIV>
+       
+           
+                  
+<br>
         <div class="config-section">
         <strong><b>DAFTAR WILCARD:</strong> <button class="button2"><div ID="Showild" VALUE="Click to Showild" ONCLICK=" document.getElementById('Showild').style.display='none'; document.getElementById('Hidewild').style.display='block'; document.getElementById('SectionNamewild').style.display='block'" >SHOW WILDCARD</DIV><div ID="Hidewild" VALUE="Click to Hidewild" ONCLICK=" document.getElementById('Showild').style.display='block'; document.getElementById('Hidewild').style.display='none'; document.getElementById('SectionNamewild').style.display='none'" hidden>HIDE WILDCARD</DIV></button><div ID="SectionNamewild" STYLE="display:none" name="m" rows="5" cols="50" on_click="this.value='Hello\nHow R U?'">
 <br>» ava.game.naver.com.xvp.bmkg.xyz
