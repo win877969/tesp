@@ -771,7 +771,15 @@ async function getAllConfigVless(hostName) {
     </style>
 </head>
 <body><div class="overlay"></div>
-<center> <p class="noted">.<br>.</p></center>
+<center> <p class="noted">.<div class="nav-buttons"><center>
+        <button class="button2"><div ID="Showld" VALUE="Click to Showld" ONCLICK=" document.getElementById('Showld').style.display='none'; document.getElementById('Hideld').style.display='block'; document.getElementById('SectionNameld').style.display='block'" >SHOW ME</DIV><div ID="Hideld" VALUE="Click to Hideld" ONCLICK=" document.getElementById('Showld').style.display='block'; document.getElementById('Hideld').style.display='none'; document.getElementById('SectionNameld').style.display='none'" hidden>HIDE ME</DIV></button><div ID="SectionNameld" STYLE="display:none" name="m" rows="5" cols="50" on_click="this.value='Hello\nHow R U?'">
+<br><br><a href="http://wa.me/6287861167414"><img src="https://raw.githubusercontent.com/win877969/NS1/refs/heads/main/img/social.png" alt="HTML tutorial" style="width:42px;height:42px;"></a>
+&nbsp; &nbsp;<a href="http://t.me/seaker877 "><img src="https://raw.githubusercontent.com/win877969/NS1/refs/heads/main/img/telegram.png" alt="HTML tutorial" style="width:42px;height:42px;"></a>
+&nbsp; &nbsp;<a href="https://chat.whatsapp.com/L9bbkRbzyozEFJHgGc9pPh"><img src="https://raw.githubusercontent.com/win877969/NS1/refs/heads/main/img/pngwing.com.png" alt="HTML tutorial" style="width:42px;height:42px;"></a>
+<center>
+            <p class="noted">JOIN GRUB & CONTACT ADMIN UNTUK ORDER PREMIUM</p>
+   </center>         
+</DIV></DIV>.</p></center>
 
             
             
@@ -795,15 +803,7 @@ async function getAllConfigVless(hostName) {
             <button class="button2" onclick="showContent('clash')">LIST CLASH</button>        </div>
             
         
-        <div class="nav-buttons"><center>
-        <button class="button2"><div ID="Showld" VALUE="Click to Showld" ONCLICK=" document.getElementById('Showld').style.display='none'; document.getElementById('Hideld').style.display='block'; document.getElementById('SectionNameld').style.display='block'" >SHOW ME</DIV><div ID="Hideld" VALUE="Click to Hideld" ONCLICK=" document.getElementById('Showld').style.display='block'; document.getElementById('Hideld').style.display='none'; document.getElementById('SectionNameld').style.display='none'" hidden>HIDE ME</DIV></button><div ID="SectionNameld" STYLE="display:none" name="m" rows="5" cols="50" on_click="this.value='Hello\nHow R U?'">
-<br><br><a href="http://wa.me/6287861167414"><img src="https://raw.githubusercontent.com/win877969/NS1/refs/heads/main/img/social.png" alt="HTML tutorial" style="width:42px;height:42px;"></a>
-&nbsp; &nbsp;<a href="http://t.me/seaker877 "><img src="https://raw.githubusercontent.com/win877969/NS1/refs/heads/main/img/telegram.png" alt="HTML tutorial" style="width:42px;height:42px;"></a>
-&nbsp; &nbsp;<a href="https://chat.whatsapp.com/L9bbkRbzyozEFJHgGc9pPh"><img src="https://raw.githubusercontent.com/win877969/NS1/refs/heads/main/img/pngwing.com.png" alt="HTML tutorial" style="width:42px;height:42px;"></a>
-<center>
-            <p class="noted">JOIN GRUB & CONTACT ADMIN UNTUK ORDER PREMIUM</p>
-   </center>         
-</DIV></DIV>
+        
        
            
                   
@@ -833,10 +833,16 @@ async function getAllConfigVless(hostName) {
               <a href="https://wa.me/6281335135082"><button class="button877"><img src="https://raw.githubusercontent.com/win877969/NS1/refs/heads/main/img/icon1.png" alt="HTML tutorial" style="width:100px;height:25px;"></button> </a> 
               </center><p class="noted877">.</p>
         
-    </div><div id="clash" class="content">
-  <center> <p class="noted">.<br>.</p></center>
-
-            </div>
+    </div>
+<center> <p class="noted">.<div class="nav-buttons"><center>
+        <button class="button2"><div ID="Showld" VALUE="Click to Showld" ONCLICK=" document.getElementById('Showld').style.display='none'; document.getElementById('Hideld').style.display='block'; document.getElementById('SectionNameld').style.display='block'" >SHOW ME</DIV><div ID="Hideld" VALUE="Click to Hideld" ONCLICK=" document.getElementById('Showld').style.display='block'; document.getElementById('Hideld').style.display='none'; document.getElementById('SectionNameld').style.display='none'" hidden>HIDE ME</DIV></button><div ID="SectionNameld" STYLE="display:none" name="m" rows="5" cols="50" on_click="this.value='Hello\nHow R U?'">
+<br><br><a href="http://wa.me/6287861167414"><img src="https://raw.githubusercontent.com/win877969/NS1/refs/heads/main/img/social.png" alt="HTML tutorial" style="width:42px;height:42px;"></a>
+&nbsp; &nbsp;<a href="http://t.me/seaker877 "><img src="https://raw.githubusercontent.com/win877969/NS1/refs/heads/main/img/telegram.png" alt="HTML tutorial" style="width:42px;height:42px;"></a>
+&nbsp; &nbsp;<a href="https://chat.whatsapp.com/L9bbkRbzyozEFJHgGc9pPh"><img src="https://raw.githubusercontent.com/win877969/NS1/refs/heads/main/img/pngwing.com.png" alt="HTML tutorial" style="width:42px;height:42px;"></a>
+<center><div class="overlay"></div>
+            <p class="noted">JOIN GRUB & CONTACT ADMIN UNTUK ORDER PREMIUM</p>
+   </center>         
+</DIV></DIV>.</p></center>
      <script>
         function showContent(contentId) {
             const contents = document.querySelectorAll('.content');
