@@ -415,18 +415,7 @@ async function getAllConfigVless(hostName) {
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
-        body1 {
-            margin: 0;
-            padding: 0;
-            font-family: 'Helvetica Neue', Arial, sans-serif;
-            color: #f5f5f5;
-            background-color: black;
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-            min-height: 100vh;
-            overflow: hidden;
-        }
+        
         body {
             margin: 0;
             padding: 0;
@@ -781,18 +770,7 @@ async function getAllConfigVless(hostName) {
             }
         }
 
-             header1 {
-            background: rgba(0, 0, 0, 0.9);
-            padding: 10px 20px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-            position: fixed;
-            width: 100%;
-            top: 0;
-            left: 0;
-            z-index: 1000;
-        }
-        header2 {
-            background: rgba(0, 0, 0, 0.9);
+             : rgba(0, 0, 0, 0.9);
             padding: 10px 20px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
             position: fixed;
@@ -811,7 +789,7 @@ async function getAllConfigVless(hostName) {
         .navbar1-nav .nav-link {
             color: #f7951e;
             font-weight: 700;
-        }
+        
         .navbar1-nav .nav-link:hover {
             color: #e0e0e0;
         }
@@ -828,8 +806,189 @@ async function getAllConfigVless(hostName) {
         }
         .navbar-nav .nav-link:hover {
             color: #e0e0e0;
+      
+
+
+
+
+
+
+
+
+
+               body1 {
+            font-family: "Roboto", sans-serif;
+            letter-spacing: 0.5px;
+            font-weight: 400;
+            background: linear-gradient(135deg, #1e1e1e, #121212);
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
         }
-        
+        header1 {
+            background: rgba(0, 0, 0, 0.9);
+            padding: 10px 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+        .navbar-brand {
+            color: #f7951e;
+            font-weight: 700;
+        }
+        .navbar-brand:hover {
+            color: #e0e0e0;
+        }
+        .navbar-nav .nav-link {
+            color: #f7951e;
+            font-weight: 700;
+        }
+        .navbar-nav .nav-link:hover {
+            color: #e0e0e0;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+            padding-top: 70px; /* Space for fixed header */
+        }
+        .carduuuu {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(8px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+            border-radius: 12px;
+            padding: 15px;
+            box-sizing: border-box;
+            margin: 15px;
+        }
+        .card:hover {
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.8);
+            transform: translateY(-5px);
+        }
+        .card__top {
+            height: auto;
+            overflow: hidden;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            position: relative;
+        }
+        .card__top img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            display: block;
+        }
+        .card__content {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .rounded-box, .rounded-box2 {
+            padding: 15px;
+            border: 2px solid #fff;
+            border-radius: 8px;
+            background-color: rgba(0, 0, 0, 0.4);
+            margin-bottom: 15px;
+            text-align: center;
+            width: 100%;
+            max-width: 500px;
+        }
+        .rounded-box2 {
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        .rounded-box .info-item, .rounded-box2 .info-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+        .info-item span.label {
+            font-weight: 600;
+        }
+        .info-item span.value {
+            text-align: right;
+        }
+        .card__content h1 {
+            font-size: 24px;
+            font-weight: 700;
+            margin: 0 0 15px;
+        }
+        .card__content h2 {
+            font-size: 20px;
+            font-weight: 600;
+            margin: 10px 0;
+        }
+        .card__content h3 {
+            font-size: 16px;
+            font-weight: 400;
+        }
+       .buttonuuuuuu {
+    display: block;  /* Make the button a block-level element */
+    width: calc(100% - 20px);  /* Full width minus padding to avoid touching edges */
+    max-width: 300px;  /* Optional: Set a maximum width for larger screens */
+    padding: 10px 0;  /* Adjust padding for height */
+    margin: 10px auto;  /* Center the button and add vertical margin */
+    text-align: center;
+    background: #f7951e;
+    color: #fff;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    box-sizing: border-box;  /* Include padding and border in width */
+}
+        .button:hover {
+            background: #d67e1e;
+            transform: scale(1.05);
+        }
+        .button:active {
+            background: #b76c1d;
+            transform: scale(0.98);
+        }
+        .button:focus {
+            outline: 2px solid #f7951e;
+            outline-offset: 4px;
+        }
+        .mytextuuuuu {
+            text-align: left;
+        }
+        footeruuuui {
+            background: rgba(0, 0, 0, 0.9);
+            color: #e0e0e0;
+            text-align: center;
+            padding: 20px;
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.3);
+            width: 100%;
+            position: relative;
+            bottom: 0;
+            margin: 0;
+        }
+        footeruuuuu a {
+            color: #f7951e;
+            text-decoration: none;
+            font-weight: 700;
+        }
+        footeruuuuu a:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 768px) {
+            .carduuuuui {
+                width: 100%;
+                margin-top: 20px;
+                max-height: none;
+            }
+            .buttonuuuuu {
+                padding: 10px 40px; /* Adjust padding for smaller screens */
+            }
+        }
     </style>
 </head>
 <body1>
