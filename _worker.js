@@ -767,10 +767,10 @@ async function getAllConfigVless(hostName) {
 
         footer {
             background: rgba(0, 0, 0, 0.9);
-            color: #e0e0e0;
+          
             text-align: center;
             padding: 20px;
-            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
             width: 100%;
             position: relative;
             bottom: 0;
@@ -834,7 +834,10 @@ async function getAllConfigVless(hostName) {
 <body>
     <header22>
         <nav class="navbar navbar-expand-lg navbar-dark">
-            <a class="navbar-brand22" href="https://vlesshub.us.kg">VLESS HUB VPN</a>
+            <div class="navbar-brand22"><a href="http://wa.me/6287861167414"><img src="https://raw.githubusercontent.com/win877969/NS1/refs/heads/main/img/social.png" alt="HTML tutorial" style="width:42px;height:42px;"></a>
+&nbsp; &nbsp;<a href="http://t.me/seaker877 "><img src="https://raw.githubusercontent.com/win877969/NS1/refs/heads/main/img/telegram.png" alt="HTML tutorial" style="width:42px;height:42px;"></a>
+&nbsp; &nbsp;<a href="https://chat.whatsapp.com/L9bbkRbzyozEFJHgGc9pPh"><img src="https://raw.githubusercontent.com/win877969/NS1/refs/heads/main/img/pngwing.com.png" alt="HTML tutorial" style="width:42px;height:42px;"></a>
+</div>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -871,19 +874,7 @@ async function getAllConfigVless(hostName) {
             <button class="button2" onclick="showContent('clash')">LIST CLASH</button>        </div>
             
         
-        <div class="nav-buttons"><center>
-        <button class="button2"><div ID="Showld" VALUE="Click to Showld" ONCLICK=" document.getElementById('Showld').style.display='none'; document.getElementById('Hideld').style.display='block'; document.getElementById('SectionNameld').style.display='block'" >SHOW ME</DIV><div ID="Hideld" VALUE="Click to Hideld" ONCLICK=" document.getElementById('Showld').style.display='block'; document.getElementById('Hideld').style.display='none'; document.getElementById('SectionNameld').style.display='none'" hidden>HIDE ME</DIV></button><div ID="SectionNameld" STYLE="display:none" name="m" rows="5" cols="50" on_click="this.value='Hello\nHow R U?'">
-<br><br><a href="http://wa.me/6287861167414"><img src="https://raw.githubusercontent.com/win877969/NS1/refs/heads/main/img/social.png" alt="HTML tutorial" style="width:42px;height:42px;"></a>
-&nbsp; &nbsp;<a href="http://t.me/seaker877 "><img src="https://raw.githubusercontent.com/win877969/NS1/refs/heads/main/img/telegram.png" alt="HTML tutorial" style="width:42px;height:42px;"></a>
-&nbsp; &nbsp;<a href="https://chat.whatsapp.com/L9bbkRbzyozEFJHgGc9pPh"><img src="https://raw.githubusercontent.com/win877969/NS1/refs/heads/main/img/pngwing.com.png" alt="HTML tutorial" style="width:42px;height:42px;"></a>
-<center>
-            <p class="noted">JOIN GRUB & CONTACT ADMIN UNTUK ORDER PREMIUM</p>
-   </center>         
-</DIV></DIV>
-       
-           
-                  
-<br>
+
         <div class="config-section">
         <strong><b>DAFTAR WILCARD:</strong> <button class="button2"><div ID="Showild" VALUE="Click to Showild" ONCLICK=" document.getElementById('Showild').style.display='none'; document.getElementById('Hidewild').style.display='block'; document.getElementById('SectionNamewild').style.display='block'" >SHOW WILDCARD</DIV><div ID="Hidewild" VALUE="Click to Hidewild" ONCLICK=" document.getElementById('Showild').style.display='block'; document.getElementById('Hidewild').style.display='none'; document.getElementById('SectionNamewild').style.display='none'" hidden>HIDE WILDCARD</DIV></button><div ID="SectionNamewild" STYLE="display:none" name="m" rows="5" cols="50" on_click="this.value='Hello\nHow R U?'">
 <br>» ava.game.naver.com.xvp.bmkg.xyz
