@@ -784,14 +784,6 @@ async function getAllConfigVless(hostName) {
         footer a:hover {
             text-decoration: underline;
         }
-        
-    </style>
-</head>
-<body>    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <style>
-       
         header22 {
             background: rgba(0, 0, 0, 0.9);
             padding: 10px 20px;
@@ -817,12 +809,16 @@ async function getAllConfigVless(hostName) {
             color: #e0e0e0;
         }
        
-        
     </style>
 </head>
-
-
-<body>
+<body>    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
+       
+        
+        
+    
     <header22>
         <nav class="navbar navbar-expand-lg navbar-dark">
             <div class="navbar-brand22"><a href="http://wa.me/6287861167414"><img src="https://raw.githubusercontent.com/win877969/NS1/refs/heads/main/img/social.png" alt="HTML tutorial" style="width:42px;height:42px;"></a>
@@ -886,7 +882,8 @@ async function getAllConfigVless(hostName) {
         <div id="clash" class="content">
             ${clashConfigs}
             </div>
-               
+               </div>
+
     </div>
 
     <footer> ©Develoved by 
