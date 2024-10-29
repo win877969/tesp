@@ -1,0 +1,23 @@
+name = "cf-ws" # todo
+main = "_worker.js"
+compatibility_date = "2024-05-26"
+[[routes]]
+pattern = "cf.bmkg.xyz"
+custom_domain = true
+
+[vars]
+PROXYIP = "35.219.15.90"
+ # 35.219.15.90 ID
+ # 51.79.254.182
+ # 35.219.50.99 ID
+ # 175.142.86.195
+ # 210.186.12.244
+ # 166.88.35.141
+ # 172.232.238.169  london
+ # 54.251.167.101 
+UUID = "d2eed70a-4102-42b0-8b40-279e6d901a02"
+# 36d47e1e-1f4d-420b-93f0-dadb5e5d2d97,e308f673-f15d-4633-90f8-18438bab3c4f,d92417b6-0aa0-423c-93ad-179a51c88200,
+# d2eed70a-4102-42b0-8b40-279e6d901a02
+# 36d47e1e-1f4d-420b-93f0-dadb5e5d2d97
+# e308f673-f15d-4633-90f8-18438bab3c4f
+# d92417b6-0aa0-423c-93ad-179a51c88200

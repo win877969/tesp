@@ -1,0 +1,324 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="VLESS HUB VPN menyediakan akun VLESS gratis dengan server dari Indonesia, Singapura dan beberapa server negara lainnya. Akses VPN tanpa batas dengan update harian dan tanpa expired account.">
+    <meta name="keywords" content="Free akun VLESS gratis, VLESS, VPN, gratis, server VPN, Google LLC, Amazon AWS, VPN tanpa batas, pembaruan harian">
+    <meta name="author" content="VLESS HUB">
+    <meta property="og:title" content="VLESS HUB VPN">
+    <meta property="og:description" content="Free akun VLESS gratis dengan server dari Indonesia, Singapura dan beberapa server negara lainnya. Akses VPN tanpa batas dengan update harian dan tanpa expired account.">
+    <meta property="og:image" content="https://i.postimg.cc/vZP1M7s8/VLESS.png">
+    <meta property="og:url" content="https://id.vlesscf.us.kg/vless">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="VLESS HUB VPN">
+    <meta name="twitter:description" content="Free akun VLESS gratis dengan server dari Indonesia, Singapura dan beberapa server negara lainnya. Akses VPN tanpa batas dengan update harian dan tanpa expired account.">
+    <meta name="twitter:image" content="https://i.postimg.cc/vZP1M7s8/VLESS.png">
+    <link rel="icon" href="https://i.postimg.cc/MTz3J8bj/faficonhub.png" type="image/png">
+    <title>VLESS HUB VPN</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+       body {
+            font-family: "Roboto", sans-serif;
+            letter-spacing: 0.5px;
+            font-weight: 400;
+            background: linear-gradient(135deg, #1e1e1e, #121212);
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        header {
+            background: rgba(0, 0, 0, 0.9);
+            padding: 10px 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+        .navbar-brand {
+            color: #f7951e;
+            font-weight: 700;
+        }
+        .navbar-brand:hover {
+            color: #e0e0e0;
+        }
+        .navbar-nav .nav-link {
+            color: #f7951e;
+            font-weight: 700;
+        }
+        .navbar-nav .nav-link:hover {
+            color: #e0e0e0;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+            padding-top: 70px; /* Space for fixed header */
+        }
+        .card {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(8px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+            border-radius: 12px;
+            padding: 15px;
+            box-sizing: border-box;
+            margin: 15px;
+        }
+        .card:hover {
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.8);
+            transform: translateY(-5px);
+        }
+        .card__top {
+            height: auto;
+            overflow: hidden;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            position: relative;
+        }
+        .card__top img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            display: block;
+        }
+        .card__content {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .rounded-box, .rounded-box2 {
+            padding: 15px;
+            border: 2px solid #fff;
+            border-radius: 8px;
+            background-color: rgba(0, 0, 0, 0.4);
+            margin-bottom: 15px;
+            text-align: center;
+            width: 100%;
+            max-width: 500px;
+        }
+        .rounded-box2 {
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        .rounded-box .info-item, .rounded-box2 .info-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+        .info-item span.label {
+            font-weight: 600;
+        }
+        .info-item span.value {
+            text-align: right;
+        }
+        .card__content h1 {
+            font-size: 24px;
+            font-weight: 700;
+            margin: 0 0 15px;
+        }
+        .card__content h2 {
+            font-size: 20px;
+            font-weight: 600;
+            margin: 10px 0;
+        }
+        .card__content h3 {
+            font-size: 16px;
+            font-weight: 400;
+        }
+       .button {
+    display: block;  /* Make the button a block-level element */
+    width: calc(100% - 20px);  /* Full width minus padding to avoid touching edges */
+    max-width: 300px;  /* Optional: Set a maximum width for larger screens */
+    padding: 10px 0;  /* Adjust padding for height */
+    margin: 10px auto;  /* Center the button and add vertical margin */
+    text-align: center;
+    background: #f7951e;
+    color: #fff;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    box-sizing: border-box;  /* Include padding and border in width */
+}
+        .button:hover {
+            background: #d67e1e;
+            transform: scale(1.05);
+        }
+        .button:active {
+            background: #b76c1d;
+            transform: scale(0.98);
+        }
+        .button:focus {
+            outline: 2px solid #f7951e;
+            outline-offset: 4px;
+        }
+        .mytext {
+            text-align: left;
+        }
+        footer {
+            background: rgba(0, 0, 0, 0.9);
+            color: #e0e0e0;
+            text-align: center;
+            padding: 20px;
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.3);
+            width: 100%;
+            position: relative;
+            bottom: 0;
+            margin: 0;
+        }
+        footer a {
+            color: #f7951e;
+            text-decoration: none;
+            font-weight: 700;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 768px) {
+            .card {
+                width: 100%;
+                margin-top: 20px;
+                max-height: none;
+            }
+            .button {
+                padding: 10px 40px; /* Adjust padding for smaller screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand" href="https://vlesshub.us.kg">VLESS HUB VPN</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://stats.uptimerobot.com/nt5hNzVvVM">Server Monitoring</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="card">
+            <div class="card__top">
+                <img src="https://i.postimg.cc/vZP1M7s8/VLESS.png" alt="VLESS HUB logo" loading="lazy">
+            </div>
+            <div class="card__content">
+                <div class="rounded-box">
+                    <h2>【 SERVER ID <img src="https://images.emojiterra.com/google/noto-emoji/unicode-15.1/color/128px/1f1ee-1f1e9.png" alt="Singapore Flag" style="width: 24px; height: auto; vertical-align: middle; margin-left: 8px;"> 】</h2>
+
+                    <div class="mytext"> 
+                        <p>✅VLESS Servers Indonesia</p>
+                        <p>✅Bandwidth Unlimited</p>
+                        <p>✅Speed Up To 1 Gbps</p>
+                        <p>✅100% Free Lifetime</p>
+			<P>✅Support Streaming HD</p>
+			<p>✅Status Online</p>
+                        <a class="button" href="https://id.vlesscf.us.kg/vless" target="_blank" rel="noopener noreferrer">VLESS</a>
+                    </div>
+                </div>
+                <div class="rounded-box">
+                  <h2>【 SERVER SG <img src="https://images.emojiterra.com/google/noto-emoji/unicode-15.1/color/128px/1f1f8-1f1ec.png" alt="Singapore Flag" style="width: 24px; height: auto; vertical-align: middle; margin-left: 8px;"> 】</h2>
+
+
+
+                    <div class="mytext">
+                        <p>✅VLESS Servers Singapura</p>
+                        <p>✅Bandwidth Unlimited</p>
+                        <p>✅Speed Up To 1 Gbps</p>
+                        <p>✅100% Free Lifetime</p>
+			<P>✅Support Streaming HD</p>
+			<p>✅Status Online</p>
+                        <a class="button" href="https://amazon.vlesscf.us.kg/vless" target="_blank" rel="noopener noreferrer">VLESS</a>
+                    </div>
+                </div>
+		
+		<div class="rounded-box">
+                  <h2>【 SERVER MY <img src="https://images.emojiterra.com/google/noto-emoji/unicode-15.1/color/128px/1f1f2-1f1fe.png" alt="Malaysia Flag" style="width: 24px; height: auto; vertical-align: middle; margin-left: 8px;"> 】</h2>
+                    <div class="mytext">
+                        <p>✅VLESS Servers Malaysia</p>
+                        <p>✅Bandwidth Unlimited</p>
+                        <p>✅Speed Up To 1 Gbps</p>
+                        <p>✅100% Free Lifetime</p>
+			<P>✅Support Streaming HD</p>
+			<p>✅Status Online</p>
+                        <a class="button" href="https://my.vlesscf.us.kg/vless" target="_blank" rel="noopener noreferrer">VLESS</a>
+                    </div>
+                </div>
+
+		<div class="rounded-box">
+                  <h2>【 SERVER JP <img src="https://images.emojiterra.com/google/noto-emoji/unicode-15.1/color/128px/1f1ef-1f1f5.png" alt="Japan Flag" style="width: 24px; height: auto; vertical-align: middle; margin-left: 8px;"> 】</h2>
+                    <div class="mytext">
+                        <p>✅VLESS Servers Japan</p>
+                        <p>✅Bandwidth Unlimited</p>
+                        <p>✅Speed Up To 1 Gbps</p>
+                        <p>✅100% Free Lifetime</p>
+			<P>✅Support Streaming HD</p>
+			<p>✅Status Online</p>
+                        <a class="button" href="https://jp.vlesscf.us.kg/vless" target="_blank" rel="noopener noreferrer">VLESS</a>
+                    </div>
+                </div>
+		
+	      <div class="rounded-box">
+                  <h2>【 SERVER USA <img src="https://images.emojiterra.com/google/noto-emoji/unicode-15.1/color/128px/1f1fa-1f1f8.png" alt="USA Flag" style="width: 24px; height: auto; vertical-align: middle; margin-left: 8px;"> 】</h2>
+                    <div class="mytext">
+                        <p>✅VLESS Servers United States</p>
+                        <p>✅Bandwidth Unlimited</p>
+                        <p>✅Speed Up To 1 Gbps</p>
+                        <p>✅100% Free Lifetime</p>
+			<P>✅Support Streaming HD</p>
+			<p>✅Status Online</p>
+                        <a class="button" href="https://us.vlesscf.us.kg/vless" target="_blank" rel="noopener noreferrer">VLESS</a>
+                    </div>
+                </div>
+
+                <div class="rounded-box2">
+                    <h3>【 INFORMATION 】</h3>
+                    <h3>*ੈ✩‧₊˚༺☆༻*ੈ✩‧₊˚*ੈ✩‧₊˚༺☆༻*ੈ✩‧₊˚</h3>
+                    <p>100% GRATIS<br>
+                    TANPA EXPIRED ACCOUNT<br>
+                    TIDAK SUPPORT GAME<br>
+                    DAILY UPDATE<br></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 VLESS HUB. All rights reserved.</p>
+        <p>
+            Follow us on 
+            | <a href="https://t.me/antblacksh" target="_blank" rel="noopener noreferrer">Telegram</a>
+        </p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "VLESS HUB VPN",
+        "description": "Free akun VLESS gratis dengan server dari Indonesia, Singapura dan beberapa server negara lainnya. Akses VPN tanpa batas dengan update harian dan tanpa expired account.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "VLESS HUB"
+        }
+    }
+    </script>
+</body>
+</html>
