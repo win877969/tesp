@@ -769,7 +769,7 @@ async function getAllConfigVless(hostName) {
             background: rgba(0, 0, 0, 0.9);
           
             text-align: center;
-            padding: 2px;
+            padding: 5px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
             width: 100%;
             position: relative;
@@ -868,8 +868,8 @@ async function getAllConfigVless(hostName) {
         
 
         <div class="config-section">
-        <strong><b>DAFTAR WILCARD:</strong> <button class="button2"><div ID="ShowId22" VALUE="Click to ShowId22" ONCLICK=" document.getElementById22('ShowId22').style.display='none'; document.getElementById22('HideId22').style.display='block'; document.getElementById22('SectionNameId22').style.display='block'" >SHOW WILDCARD</DIV><div ID="HideId22" VALUE="Click to Hideld22" ONCLICK=" document.getElementById23('ShowId22').style.display='block'; document.getElementById22('HideId22').style.display='none'; document.getElementById22('SectionNameId22').style.display='none'" hidden>HIDE WILDCARD</DIV></button><div ID="SectionNameId22" STYLE="display:none" name="m" rows="5" cols="50" on_click="this.value='Hello\nHow R U?'">
-<br>» ava.game.naver.com.xvp.bmkg.xyz
+        <strong><b>DAFTAR WILCARD:</strong> 
+        <br>» ava.game.naver.com.xvp.bmkg.xyz
 <br>» graph.instagram.com.xvp.bmkg.xyz
 <br>» quiz.int.vidio.com.xvp.bmkg.xyz
 <br>» live.iflix.com.xvp.bmkg.xyz
@@ -878,7 +878,7 @@ async function getAllConfigVless(hostName) {
 <br>» investors.spotify.com.xvp.bmkg.xyz
 <br>» cache.netflix.com.xvp.bmkg.xyz
 <br>» zaintest.vuclip.com.xvp.bmkg.xyz
-<br>» io.ruangguru.com.xvp.bmkg.xyz</b></DIV></DIV>
+<br>» io.ruangguru.com.xvp.bmkg.xyz</b></DIV>
         <hr class="config-divider" />
         <div id="vless" class="content active">
             ${vlessConfigs}
@@ -889,9 +889,9 @@ async function getAllConfigVless(hostName) {
                
     </div>
 
-    <footer><div class="watermark"> ©Develoved by 
+    <footer> ©Develoved by 
               <a href="https://wa.me/6281335135082"><button class="button877"><img src="https://raw.githubusercontent.com/win877969/NS1/refs/heads/main/img/icon1.png" alt="HTML tutorial" style="width:100px;height:25px;"></button> </a> 
-    </footer></div>
+    </footer>
      <script>
         function showContent(contentId) {
             const contents = document.querySelectorAll('.content');
