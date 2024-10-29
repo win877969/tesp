@@ -840,7 +840,7 @@ async function getAllConfigVless(hostName) {
                         <a class="nav-link" href="https://stats.uptimerobot.com/nt5hNzVvVM">Server Monitoring</a>
                     </li>
                 </ul>
-            </div>
+            </div></div>
         </nav>
     </header22>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
