@@ -771,92 +771,13 @@ async function getAllConfigVless(hostName) {
 </div>
             
             
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-.topnav {
-  overflow: hidden;
-  background-color: #333;
-}
-
-.topnav a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-.topnav a.active {
-  background-color: #04AA6D;
-  color: white;
-}
-
-.topnav .icon {
-  display: none;
-}
-
-@media screen and (max-width: 600px) {
-  .topnav a:not(:first-child) {display: none;}
-  .topnav a.icon {
-    float: right;
-    display: block;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .topnav.responsive {position: relative;}
-  .topnav.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .topnav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-}
-</style>
 
 
-<div class="topnav" id="myTopnav">
-<a href="http://wa.me/6287861167414"><img src="https://raw.githubusercontent.com/win877969/NS1/refs/heads/main/img/social.png" alt="HTML tutorial" style="width:42px;height:42px;"></a>
-&nbsp; &nbsp;<a href="http://t.me/seaker877 "><img src="https://raw.githubusercontent.com/win877969/NS1/refs/heads/main/img/telegram.png" alt="HTML tutorial" style="width:42px;height:42px;"></a>
-&nbsp; &nbsp;<a href="https://chat.whatsapp.com/L9bbkRbzyozEFJHgGc9pPh"><img src="https://raw.githubusercontent.com/win877969/NS1/refs/heads/main/img/pngwing.com.png" alt="HTML tutorial" style="width:42px;height:42px;"></a>
-</a>
-  <a href="#news">News</a>
-  <a href="#contact">Contact</a>
-  <a href="#about">About</a>
-  <a href="javascript:void(0);" class="icon" onclick="myFunction12()">
-    <i class="fa fa-bars"></i>
-  </a>
-</div>
+
+
 
 <div style="padding-left:16px">
-  <h2>Responsive Topnav Example</h2>
-  <p>Resize the browser window to see how it works.</p>
-</div>
 
-<script>
-function myFunction12() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
-}
-</script>
-
-
-    
     <div class="container">   
     <div class="card__top">
           <img src="https://raw.githubusercontent.com/win877969/NS1/refs/heads/main/img/icon.png" alt="VLESS logo" loading="lazy">
