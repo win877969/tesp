@@ -829,7 +829,7 @@ async function getAllConfigVless(hostName) {
   <a href="#news">News</a>
   <a href="#contact">Contact</a>
   <a href="#about">About</a>
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+  <a href="javascript:void(0);" class="icon" onclick="myFunction12()">
     <i class="fa fa-bars"></i>
   </a>
 </div>
@@ -840,7 +840,7 @@ async function getAllConfigVless(hostName) {
 </div>
 
 <script>
-function myFunction() {
+function myFunction12() {
   var x = document.getElementById("myTopnav");
   if (x.className === "topnav") {
     x.className += " responsive";
