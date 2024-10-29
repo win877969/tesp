@@ -824,7 +824,7 @@ async function getAllConfigVless(hostName) {
 <body>
     <div class="overlay">
     <div class="container">   <p class="noted877">.</p><br><p class="noted877">.</p>
-      
+      </div> 
     <header2>
         <nav class="navbar navbar-expand-lg navbar-dark">
             <a class="navbar1-brand" href="https://vlesshub.us.kg">VLESS HUB VPN</a>
@@ -840,7 +840,6 @@ async function getAllConfigVless(hostName) {
             </div>
         </nav>
     </header2>
-    </div>
     
       <div class="card__top">
           <img src="https://raw.githubusercontent.com/win877969/NS1/refs/heads/main/img/icon.png" alt="VLESS logo" loading="lazy">
