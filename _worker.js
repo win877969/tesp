@@ -833,9 +833,10 @@ async function getAllConfigVless(hostName) {
               <a href="https://wa.me/6281335135082"><button class="button877"><img src="https://raw.githubusercontent.com/win877969/NS1/refs/heads/main/img/icon1.png" alt="HTML tutorial" style="width:100px;height:25px;"></button> </a> 
               </center><p class="noted877">.</p>
         
-    </div>
-  
-            
+    </div><div id="clash" class="content">
+  <center> <p class="noted">.<br>.</p></center>
+
+            </div>
      <script>
         function showContent(contentId) {
             const contents = document.querySelectorAll('.content');
