@@ -768,9 +768,8 @@ async function getAllConfigVless(hostName) {
 </head> 
 
 <body>
-    <div class="overlay"></div>
-    <div class="container">   <p class="noted877">.</p><br><p class="noted877">.</p>
-       <style>
+    
+    <div class="container">   <style>
 .sidenav {
   height: 100%;
   width: 0;
