@@ -821,8 +821,7 @@ async function getAllConfigVless(hostName) {
         
     </style>
 </head>
-<body>
-    
+
     <header2>
         <nav class="navbar navbar-expand-lg navbar-dark">
             <a class="navbar1-brand" href="https://vlesshub.us.kg">VLESS HUB VPN</a>
@@ -837,7 +836,7 @@ async function getAllConfigVless(hostName) {
                 </ul>
             </div>
         </nav>
-    </header2>
+    </header2><body>
     <div class="overlay">
     <div class="container">   <p class="noted877">.</p><br><p class="noted877">.</p>
       </div> 
