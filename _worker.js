@@ -766,7 +766,7 @@ async function getAllConfigVless(hostName) {
         }
     </style>
 </head>
-<body><div class="overlay"></div>
+<body><div class="overlay">
 
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -850,10 +850,10 @@ function myFunction12() {
 }
 </script>
 
-
+</div>
     
-    <div class="container">   <p class="noted877">.</p><br><p class="noted877">.</p>
-        <div class="card__top">
+    <div class="container">   
+    <div class="card__top">
           <img src="https://raw.githubusercontent.com/win877969/NS1/refs/heads/main/img/icon.png" alt="VLESS logo" loading="lazy">
                         
         </div>
