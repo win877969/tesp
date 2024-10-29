@@ -768,8 +768,7 @@ async function getAllConfigVless(hostName) {
 </head>
 <body>
     <div class="overlay"></div>
-    <div class="container">   <p class="noted877">.</p><br><p class="noted877">.</p>
-        <div class="card__top">
+    <p class="noted877"><div class="card__top">
           <img src="https://raw.githubusercontent.com/win877969/NS1/refs/heads/main/img/icon.png" alt="VLESS logo" loading="lazy">
                         
         </div>
@@ -788,7 +787,9 @@ async function getAllConfigVless(hostName) {
 <center>
             <p class="noted">JOIN GRUB & CONTACT ADMIN UNTUK ORDER PREMIUM</p>
    </center>         
-</DIV></DIV>
+</DIV></DIV></p>
+        
+    <div class="container">   
        
            
                   
