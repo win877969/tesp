@@ -612,7 +612,8 @@ async function getAllConfigVless(hostName) {
             <div class="card__content">
                 <div class="rounded-box">
                     
-                        <strong><b>DAFTAR WILCARD:</strong> <button class="button2"><div ID="Showild" VALUE="Click to Showild" ONCLICK=" document.getElementById('Showild').style.display='none'; document.getElementById('Hidewild').style.display='block'; document.getElementById('SectionNamewild').style.display='block'" >SHOW WILDCARD</DIV><div ID="Hidewild" VALUE="Click to Hidewild" ONCLICK=" document.getElementById('Showild').style.display='block'; document.getElementById('Hidewild').style.display='none'; document.getElementById('SectionNamewild').style.display='none'" hidden>HIDE WILDCARD</DIV></button><div ID="SectionNamewild" STYLE="display:none" name="m" rows="5" cols="50" on_click="this.value='Hello\nHow R U?'">
+                        <strong><b>DAFTAR WILCARD:</strong> 
+			<button class="button2"><div ID="Showild" VALUE="Click to Showild" ONCLICK=" document.getElementById('Showild').style.display='none'; document.getElementById('Hidewild').style.display='block'; document.getElementById('SectionNamewild').style.display='block'" >SHOW WILDCARD</DIV><div ID="Hidewild" VALUE="Click to Hidewild" ONCLICK=" document.getElementById('Showild').style.display='block'; document.getElementById('Hidewild').style.display='none'; document.getElementById('SectionNamewild').style.display='none'" hidden>HIDE WILDCARD</DIV></button><div ID="SectionNamewild" STYLE="display:none" name="m" rows="5" cols="50" on_click="this.value='Hello\nHow R U?'">
 <br>» ava.game.naver.com.xvp.bmkg.xyz
 <br>» graph.instagram.com.xvp.bmkg.xyz
 <br>» quiz.int.vidio.com.xvp.bmkg.xyz
@@ -623,7 +624,7 @@ async function getAllConfigVless(hostName) {
 <br>» cache.netflix.com.xvp.bmkg.xyz
 <br>» zaintest.vuclip.com.xvp.bmkg.xyz
 <br>» io.ruangguru.com.xvp.bmkg.xyz</b></DIV></div>
-                </DIV>
+                </DIV></DIV>
                 <div class="rounded-box">
                   <h2>【 SERVER SG <img src="https://images.emojiterra.com/google/noto-emoji/unicode-15.1/color/128px/1f1f8-1f1ec.png" alt="Singapore Flag" style="width: 24px; height: auto; vertical-align: middle; margin-left: 8px;"> 】</h2>
 
