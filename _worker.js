@@ -590,7 +590,7 @@ async function getAllConfigVless(hostName) {
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark">
-            <a class="navbar-brand" href="https://vlesshub.us.kg">VLESS HUB VPN</a>
+            <a class="navbar-brand" href="https://vlesshub.us.kg">XVP.BMKG.XYZ</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -599,15 +599,30 @@ async function getAllConfigVless(hostName) {
                     <li class="nav-item">
                         <a class="nav-link" href="https://stats.uptimerobot.com/nt5hNzVvVM">Server Monitoring</a>
                     </li>
+		    <li class="nav-item">
+                        <a class="nav-link" href="https://stats.uptimerobot.com/nt5hNzVvVM">Server Monitoring</a>
+                    </li>
+		    <li class="nav-item">
+                        <a class="nav-link" href="https://stats.uptimerobot.com/nt5hNzVvVM">Server Monitoring</a>
+                    </li>
+		    <li class="nav-item">
+                        <a class="nav-link" href="https://stats.uptimerobot.com/nt5hNzVvVM">Server Monitoring</a>
+                    </li>
+		    <li class="nav-item">
+                        <a class="nav-link" href="https://stats.uptimerobot.com/nt5hNzVvVM">Server Monitoring</a>
+                    </li>
+		    <li class="nav-item">
+                        <a class="nav-link" href="https://stats.uptimerobot.com/nt5hNzVvVM">Server Monitoring</a>
+                    </li>
                 </ul>
             </div>
         </nav>
     </header>
     <div class="container">
-        <div class="card">
+        
             <div class="card__top">
-                <img src="https://i.postimg.cc/vZP1M7s8/VLESS.png" alt="VLESS HUB logo" loading="lazy">
-            </div>
+                <img src="https://raw.githubusercontent.com/win877969/NS1/refs/heads/main/img/icon.png" alt="VLESS logo" loading="lazy">
+  </div>
             <div class="card__content">
                 <div class="rounded-box">
                     <h2>【 SERVER ID <img src="https://images.emojiterra.com/google/noto-emoji/unicode-15.1/color/128px/1f1ee-1f1e9.png" alt="Singapore Flag" style="width: 24px; height: auto; vertical-align: middle; margin-left: 8px;"> 】</h2>
