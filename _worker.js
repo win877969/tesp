@@ -417,12 +417,21 @@ async function getAllConfigVless(hostName) {
     <meta name="twitter:title" content="VLESS HUB VPN">
     <meta name="twitter:description" content="Free akun VLESS gratis dengan server dari Indonesia, Singapura dan beberapa server negara lainnya. Akses VPN tanpa batas dengan update harian dan tanpa expired account.">
     <meta name="twitter:image" content="https://i.postimg.cc/vZP1M7s8/VLESS.png">
-    <link rel="icon" href="https://i.postimg.cc/MTz3J8bj/faficonhub.png" type="image/png">
-    <title>VLESS HUB VPN</title>
+   
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Vless | XVPN | CLoudFlare</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4C+6PCWJ+8zzHcXQjXGp6n5Yh9rX0x5fOdPaOqO+e2X4R5C1aE/BSqPIG+8y3O6APa8w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="https://raw.githubusercontent.com/win877969/NS1/refs/heads/main/img/icon.png" type="image/png">
+
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+    
        body {
             font-family: "Roboto", sans-serif;
             letter-spacing: 0.5px;
