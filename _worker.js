@@ -401,6 +401,7 @@ async function getAllConfigVless(hostName) {
     const htmlConfigs = `
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -408,6 +409,10 @@ async function getAllConfigVless(hostName) {
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4C+6PCWJ+8zzHcXQjXGp6n5Yh9rX0x5fOdPaOqO+e2X4R5C1aE/BSqPIG+8y3O6APa8w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="icon" href="https://raw.githubusercontent.com/win877969/NS1/refs/heads/main/img/icon.png" type="image/png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
@@ -775,31 +780,7 @@ async function getAllConfigVless(hostName) {
             left: 0;
             z-index: 1000;
         }
-        .navbar-brand {
-            color: #f7951e;
-            font-weight: 700;
-        }
-        .navbar-brand:hover {
-            color: #e0e0e0;
-        }
-        .navbar-nav .nav-link {
-            color: #f7951e;
-            font-weight: 700;
-        }
-        .navbar-nav .nav-link:hover {
-            color: #e0e0e0;
-        }
-        
-    </style>
-</head>
-<body>
-    <div class="overlay">
-               <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <style>
-       
-        header1 {
+        header2 {
             background: rgba(0, 0, 0, 0.9);
             padding: 10px 20px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
@@ -823,10 +804,28 @@ async function getAllConfigVless(hostName) {
         .navbar1-nav .nav-link:hover {
             color: #e0e0e0;
         }
-       
+        .navbar-brand {
+            color: #f7951e;
+            font-weight: 700;
+        }
+        .navbar-brand:hover {
+            color: #e0e0e0;
+        }
+        .navbar-nav .nav-link {
+            color: #f7951e;
+            font-weight: 700;
+        }
+        .navbar-nav .nav-link:hover {
+            color: #e0e0e0;
+        }
+        
     </style>
-
-    <header1>
+</head>
+<body>
+    <div class="overlay">
+    <div class="container">   <p class="noted877">.</p><br><p class="noted877">.</p>
+      
+    <header2>
         <nav class="navbar navbar-expand-lg navbar-dark">
             <a class="navbar1-brand" href="https://vlesshub.us.kg">VLESS HUB VPN</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -840,15 +839,9 @@ async function getAllConfigVless(hostName) {
                 </ul>
             </div>
         </nav>
-    </header1>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
- 
-
+    </header2>
     </div>
-    <div class="container">   <p class="noted877">.</p><br><p class="noted877">.</p>
-      
+    
       <div class="card__top">
           <img src="https://raw.githubusercontent.com/win877969/NS1/refs/heads/main/img/icon.png" alt="VLESS logo" loading="lazy">
                         
@@ -898,6 +891,9 @@ async function getAllConfigVless(hostName) {
               </center><p class="noted877">.</p>
         
     </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
      <script>
         function showContent(contentId) {
             const contents = document.querySelectorAll('.content');
