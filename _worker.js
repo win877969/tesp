@@ -457,6 +457,33 @@ async function getAllConfigVless(hostName) {
         .navbar-nav .nav-link:hover {
             color: #e0e0e0;
         }
+        .nav-buttons {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            gap: 10px;
+        }
+
+        .nav-buttons .button {
+            background-color: transparent;
+            border: 3px solid #448998;
+            color: #448998;
+            padding: 6px 12px;
+            font-size: 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+
+        .nav-buttons .button:hover {
+            background-color: #448998;
+            color: #fff;
+            transform: scale(1.05);
+        }
+	
         .container {
             display: flex;
             justify-content: center;
