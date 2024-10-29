@@ -769,7 +769,7 @@ async function getAllConfigVless(hostName) {
             background: rgba(0, 0, 0, 0.9);
           
             text-align: center;
-            padding: 20px;
+            padding: 2px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
             width: 100%;
             position: relative;
@@ -784,16 +784,7 @@ async function getAllConfigVless(hostName) {
         footer a:hover {
             text-decoration: underline;
         }
-        @media (max-width: 768px) {
-            .card {
-                width: 100%;
-                margin-top: 20px;
-                max-height: none;
-            }
-            .button {
-                padding: 10px 40px; /* Adjust padding for smaller screens */
-            }
-        }
+        
     </style>
 </head>
 <body>    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
@@ -871,11 +862,13 @@ async function getAllConfigVless(hostName) {
         <div class="nav-buttons">
             <button class="button2" onclick="showContent('vless')">LIST VLESS</button>
             <button class="button2" onclick="showContent('clash')">LIST CLASH</button>        </div>
-            
+            <center>
+            <p class="noted"> Noted: Pastikan untuk memeriksa konfigurasi dengan teliti sebelum digunakan.</p>
+        </center> 
         
 
         <div class="config-section">
-        <strong><b>DAFTAR WILCARD:</strong> <button class="button2"><div ID="Show22" VALUE="Click to Show22" ONCLICK=" document.getElementById('Show22').style.display='none'; document.getElementById('Hide22').style.display='block'; document.getElementById('SectionName22').style.display='block'" >SHOW WILDCARD</DIV><div ID="Hide22" VALUE="Click to Hidewild" ONCLICK=" document.getElementById('Show22').style.display='block'; document.getElementById('Hide22').style.display='none'; document.getElementById('SectionName22').style.display='none'" hidden>HIDE WILDCARD</DIV></button><div ID="SectionName22" STYLE="display:none" name="m" rows="5" cols="50" on_click="this.value='Hello\nHow R U?'">
+        <strong><b>DAFTAR WILCARD:</strong> <button class="button2"><div ID="ShowId22" VALUE="Click to ShowId22" ONCLICK=" document.getElementById22('ShowId22').style.display='none'; document.getElementById22('HideId22').style.display='block'; document.getElementById22('SectionNameId22').style.display='block'" >SHOW WILDCARD</DIV><div ID="HideId22" VALUE="Click to Hideld22" ONCLICK=" document.getElementById23('ShowId22').style.display='block'; document.getElementById22('HideId22').style.display='none'; document.getElementById22('SectionNameId22').style.display='none'" hidden>HIDE WILDCARD</DIV></button><div ID="SectionNameId22" STYLE="display:none" name="m" rows="5" cols="50" on_click="this.value='Hello\nHow R U?'">
 <br>» ava.game.naver.com.xvp.bmkg.xyz
 <br>» graph.instagram.com.xvp.bmkg.xyz
 <br>» quiz.int.vidio.com.xvp.bmkg.xyz
@@ -892,14 +885,13 @@ async function getAllConfigVless(hostName) {
         </div>
         <div id="clash" class="content">
             ${clashConfigs}
-            </div><center>
-            <p class="noted"> Noted: Pastikan untuk memeriksa konfigurasi dengan teliti sebelum digunakan.</p>
-        </center>
-    </div>    <footer>
-        <p>©Develoved by 
+            </div>
+               <footer>
+        ©Develoved by 
               <a href="https://wa.me/6281335135082"><button class="button877"><img src="https://raw.githubusercontent.com/win877969/NS1/refs/heads/main/img/icon1.png" alt="HTML tutorial" style="width:100px;height:25px;"></button> </a> 
-             </p>
+            
     </footer>
+    </div>
      <script>
         function showContent(contentId) {
             const contents = document.querySelectorAll('.content');
