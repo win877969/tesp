@@ -408,11 +408,11 @@ async function getAllConfigVless(hostName) {
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4C+6PCWJ+8zzHcXQjXGp6n5Yh9rX0x5fOdPaOqO+e2X4R5C1aE/BSqPIG+8y3O6APa8w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="icon" href="https://raw.githubusercontent.com/win877969/NS1/refs/heads/main/img/icon.png" type="image/png">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
-               body {
+       body {
             font-family: "Roboto", sans-serif;
             letter-spacing: 0.5px;
             font-weight: 400;
@@ -585,14 +585,12 @@ async function getAllConfigVless(hostName) {
                 padding: 10px 40px; /* Adjust padding for smaller screens */
             }
         }
-            
-            
     </style>
 </head>
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark">
-            <a class="navbar-brand" href="https://vlesshub.us.kg">XVP.BMKG.XYZ</a>
+            <a class="navbar-brand" href="https://vlesshub.us.kg">VLESS HUB VPN</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -601,76 +599,95 @@ async function getAllConfigVless(hostName) {
                     <li class="nav-item">
                         <a class="nav-link" href="https://stats.uptimerobot.com/nt5hNzVvVM">Server Monitoring</a>
                     </li>
-		    <li class="nav-item">
-                        <a class="nav-link" href="https://stats.uptimerobot.com/nt5hNzVvVM">Server Monitoring</a>
-                    </li>
-		    <li class="nav-item">
-                        <a class="nav-link" href="https://stats.uptimerobot.com/nt5hNzVvVM">Server Monitoring</a>
-                    </li>
-		    <li class="nav-item">
-                        <a class="nav-link" href="https://stats.uptimerobot.com/nt5hNzVvVM">Server Monitoring</a>
-                    </li>
-		    <li class="nav-item">
-                        <a class="nav-link" href="https://stats.uptimerobot.com/nt5hNzVvVM">Server Monitoring</a>
-                    </li>
-		    <li class="nav-item">
-                        <a class="nav-link" href="https://stats.uptimerobot.com/nt5hNzVvVM">Server Monitoring</a>
-                    </li>
                 </ul>
             </div>
         </nav>
     </header>
     <div class="container">
-
+        <div class="card">
             <div class="card__top">
-                <img src="https://raw.githubusercontent.com/win877969/NS1/refs/heads/main/img/icon.png" alt="VLESS logo" loading="lazy">
-  </div></div>
+                <img src="https://i.postimg.cc/vZP1M7s8/VLESS.png" alt="VLESS HUB logo" loading="lazy">
+            </div>
+            <div class="card__content">
+                <div class="rounded-box">
+                    <h2>【 SERVER ID <img src="https://images.emojiterra.com/google/noto-emoji/unicode-15.1/color/128px/1f1ee-1f1e9.png" alt="Singapore Flag" style="width: 24px; height: auto; vertical-align: middle; margin-left: 8px;"> 】</h2>
 
-<div class="nav-buttons">
-            <button class="button2" onclick="showContent('vless')">LIST VLESS</button>
-            <button class="button2" onclick="showContent('clash')">LIST CLASH</button>        </div>
-            
-        
-        <div class="nav-buttons"><center>
-        <button class="button2"><div ID="Showld" VALUE="Click to Showld" ONCLICK=" document.getElementById('Showld').style.display='none'; document.getElementById('Hideld').style.display='block'; document.getElementById('SectionNameld').style.display='block'" >SHOW ME</DIV><div ID="Hideld" VALUE="Click to Hideld" ONCLICK=" document.getElementById('Showld').style.display='block'; document.getElementById('Hideld').style.display='none'; document.getElementById('SectionNameld').style.display='none'" hidden>HIDE ME</DIV></button><div ID="SectionNameld" STYLE="display:none" name="m" rows="5" cols="50" on_click="this.value='Hello\nHow R U?'">
-<br><br><a href="http://wa.me/6287861167414"><img src="https://raw.githubusercontent.com/win877969/NS1/refs/heads/main/img/social.png" alt="HTML tutorial" style="width:42px;height:42px;"></a>
-&nbsp; &nbsp;<a href="http://t.me/seaker877 "><img src="https://raw.githubusercontent.com/win877969/NS1/refs/heads/main/img/telegram.png" alt="HTML tutorial" style="width:42px;height:42px;"></a>
-&nbsp; &nbsp;<a href="https://chat.whatsapp.com/L9bbkRbzyozEFJHgGc9pPh"><img src="https://raw.githubusercontent.com/win877969/NS1/refs/heads/main/img/pngwing.com.png" alt="HTML tutorial" style="width:42px;height:42px;"></a>
-<center>
-            <p class="noted">JOIN GRUB & CONTACT ADMIN UNTUK ORDER PREMIUM</p>
-   </center>         
-</DIV></DIV>
-       
-           
-                  
-<br>
-        <div class="config-section">
-        <strong><b>DAFTAR WILCARD:</strong> <button class="button2"><div ID="Showild" VALUE="Click to Showild" ONCLICK=" document.getElementById('Showild').style.display='none'; document.getElementById('Hidewild').style.display='block'; document.getElementById('SectionNamewild').style.display='block'" >SHOW WILDCARD</DIV><div ID="Hidewild" VALUE="Click to Hidewild" ONCLICK=" document.getElementById('Showild').style.display='block'; document.getElementById('Hidewild').style.display='none'; document.getElementById('SectionNamewild').style.display='none'" hidden>HIDE WILDCARD</DIV></button><div ID="SectionNamewild" STYLE="display:none" name="m" rows="5" cols="50" on_click="this.value='Hello\nHow R U?'">
-<br>» ava.game.naver.com.xvp.bmkg.xyz
-<br>» graph.instagram.com.xvp.bmkg.xyz
-<br>» quiz.int.vidio.com.xvp.bmkg.xyz
-<br>» live.iflix.com.xvp.bmkg.xyz
-<br>» support.zoom.us.xvp.bmkg.xyz
-<br>» blog.webex.com.xvp.bmkg.xyz
-<br>» investors.spotify.com.xvp.bmkg.xyz
-<br>» cache.netflix.com.xvp.bmkg.xyz
-<br>» zaintest.vuclip.com.xvp.bmkg.xyz
-<br>» io.ruangguru.com.xvp.bmkg.xyz</b></DIV></DIV>
-        <hr class="config-divider" />
-        <div id="vless" class="content active">
-            ${vlessConfigs}
+                    <div class="mytext"> 
+                        <p>✅VLESS Servers Indonesia</p>
+                        <p>✅Bandwidth Unlimited</p>
+                        <p>✅Speed Up To 1 Gbps</p>
+                        <p>✅100% Free Lifetime</p>
+			<P>✅Support Streaming HD</p>
+			<p>✅Status Online</p>
+                        <a class="button" href="https://id.vlesscf.us.kg/vless" target="_blank" rel="noopener noreferrer">VLESS</a>
+                    </div>
+                </div>
+                <div class="rounded-box">
+                  <h2>【 SERVER SG <img src="https://images.emojiterra.com/google/noto-emoji/unicode-15.1/color/128px/1f1f8-1f1ec.png" alt="Singapore Flag" style="width: 24px; height: auto; vertical-align: middle; margin-left: 8px;"> 】</h2>
+
+
+
+                    <div class="mytext">
+                        <p>✅VLESS Servers Singapura</p>
+                        <p>✅Bandwidth Unlimited</p>
+                        <p>✅Speed Up To 1 Gbps</p>
+                        <p>✅100% Free Lifetime</p>
+			<P>✅Support Streaming HD</p>
+			<p>✅Status Online</p>
+                        <a class="button" href="https://amazon.vlesscf.us.kg/vless" target="_blank" rel="noopener noreferrer">VLESS</a>
+                    </div>
+                </div>
+		
+		<div class="rounded-box">
+                  <h2>【 SERVER MY <img src="https://images.emojiterra.com/google/noto-emoji/unicode-15.1/color/128px/1f1f2-1f1fe.png" alt="Malaysia Flag" style="width: 24px; height: auto; vertical-align: middle; margin-left: 8px;"> 】</h2>
+                    <div class="mytext">
+                        <p>✅VLESS Servers Malaysia</p>
+                        <p>✅Bandwidth Unlimited</p>
+                        <p>✅Speed Up To 1 Gbps</p>
+                        <p>✅100% Free Lifetime</p>
+			<P>✅Support Streaming HD</p>
+			<p>✅Status Online</p>
+                        <a class="button" href="https://my.vlesscf.us.kg/vless" target="_blank" rel="noopener noreferrer">VLESS</a>
+                    </div>
+                </div>
+
+		<div class="rounded-box">
+                  <h2>【 SERVER JP <img src="https://images.emojiterra.com/google/noto-emoji/unicode-15.1/color/128px/1f1ef-1f1f5.png" alt="Japan Flag" style="width: 24px; height: auto; vertical-align: middle; margin-left: 8px;"> 】</h2>
+                    <div class="mytext">
+                        <p>✅VLESS Servers Japan</p>
+                        <p>✅Bandwidth Unlimited</p>
+                        <p>✅Speed Up To 1 Gbps</p>
+                        <p>✅100% Free Lifetime</p>
+			<P>✅Support Streaming HD</p>
+			<p>✅Status Online</p>
+                        <a class="button" href="https://jp.vlesscf.us.kg/vless" target="_blank" rel="noopener noreferrer">VLESS</a>
+                    </div>
+                </div>
+		
+	      <div class="rounded-box">
+                  <h2>【 SERVER USA <img src="https://images.emojiterra.com/google/noto-emoji/unicode-15.1/color/128px/1f1fa-1f1f8.png" alt="USA Flag" style="width: 24px; height: auto; vertical-align: middle; margin-left: 8px;"> 】</h2>
+                    <div class="mytext">
+                        <p>✅VLESS Servers United States</p>
+                        <p>✅Bandwidth Unlimited</p>
+                        <p>✅Speed Up To 1 Gbps</p>
+                        <p>✅100% Free Lifetime</p>
+			<P>✅Support Streaming HD</p>
+			<p>✅Status Online</p>
+                        <a class="button" href="https://us.vlesscf.us.kg/vless" target="_blank" rel="noopener noreferrer">VLESS</a>
+                    </div>
+                </div>
+
+                <div class="rounded-box2">
+                    <h3>【 INFORMATION 】</h3>
+                    <h3>*ੈ✩‧₊˚༺☆༻*ੈ✩‧₊˚*ੈ✩‧₊˚༺☆༻*ੈ✩‧₊˚</h3>
+                    <p>100% GRATIS<br>
+                    TANPA EXPIRED ACCOUNT<br>
+                    TIDAK SUPPORT GAME<br>
+                    DAILY UPDATE<br></p>
+                </div>
+            </div>
         </div>
-        <div id="clash" class="content">
-            ${clashConfigs}
-            </div><center>
-            <p class="noted"> Noted: Pastikan untuk memeriksa konfigurasi dengan teliti sebelum digunakan.</p>
-            <p class="noted">©Develoved by 
-              <a href="https://wa.me/6281335135082"><button class="button877"><img src="https://raw.githubusercontent.com/win877969/NS1/refs/heads/main/img/icon1.png" alt="HTML tutorial" style="width:100px;height:25px;"></button> </a> 
-              </center><p class="noted877">.</p>
-        
     </div>
-  
-    
     <footer>
         <p>&copy; 2024 VLESS HUB. All rights reserved.</p>
         <p>
@@ -693,7 +710,7 @@ async function getAllConfigVless(hostName) {
         }
     }
     </script>
-         <script>
+     <script>
         function showContent(contentId) {
             const contents = document.querySelectorAll('.content');
             contents.forEach(content => {
