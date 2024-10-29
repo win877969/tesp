@@ -812,14 +812,15 @@ async function getAllConfigVless(hostName) {
         <div id="clash" class="content">
             ${clashConfigs}
             </div>
-    </div>
-    <div class="watermark">
             <center>
             <p class="noted"> Noted: Pastikan untuk memeriksa konfigurasi dengan teliti sebelum digunakan.</p>
             <p class="noted">©Develoved by 
               <a href="https://wa.me/6281335135082"><button class="button877"><img src="https://raw.githubusercontent.com/win877969/NS1/refs/heads/main/img/icon1.png" alt="HTML tutorial" style="width:100px;height:25px;"></button> </a> 
-              </center><p class="noted877">.</p></div>
+              </center><p class="noted877">.</p>
         
+    </div>
+  
+            
      <script>
         function showContent(contentId) {
             const contents = document.querySelectorAll('.content');
