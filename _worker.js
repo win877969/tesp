@@ -765,7 +765,8 @@ async function getAllConfigVless(hostName) {
             }
         }
     </style>
-</head>
+</head> 
+
 <body>
     <div class="overlay"></div>
     <div class="container">   <p class="noted877">.</p><br><p class="noted877">.</p>
@@ -809,7 +810,7 @@ async function getAllConfigVless(hostName) {
   .sidenav a {font-size: 18px;}
 }
 </style>
-</head>
+
 <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -825,7 +826,6 @@ function closeNav() {
 }
 </script>
    
-</html> 
 
         
         <div class="card__top">
