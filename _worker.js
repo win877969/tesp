@@ -603,8 +603,8 @@ async function getAllConfigVless(hostName) {
             </div>
         </nav>
     </header>
-    
-        <div class="card">
+        <div class="container">
+        
             <div class="card__top">
                 <img src="https://i.postimg.cc/vZP1M7s8/VLESS.png" alt="VLESS HUB logo" loading="lazy">
             </div>
