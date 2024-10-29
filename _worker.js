@@ -798,7 +798,7 @@ async function getAllConfigVless(hostName) {
 </head>
 <body>
     <div class="overlay"></div>
-    <div class="container">   <p class="noted877">.</p><br><p class="noted877">.</p>
+    <div class="container">   <p class="noted877">.</p>
         <div class="card__top">
           <img src="https://raw.githubusercontent.com/win877969/NS1/refs/heads/main/img/icon.png" alt="VLESS logo" loading="lazy">
                         
@@ -843,10 +843,7 @@ async function getAllConfigVless(hostName) {
             ${clashConfigs}
             </div><center>
             <p class="noted"> Noted: Pastikan untuk memeriksa konfigurasi dengan teliti sebelum digunakan.</p>
-            <p class="noted">©Develoved by 
-              <a href="https://wa.me/6281335135082"><button class="button877"><img src="https://raw.githubusercontent.com/win877969/NS1/refs/heads/main/img/icon1.png" alt="HTML tutorial" style="width:100px;height:25px;"></button> </a> 
-              </center><p class="noted877">.</p>
-        
+        </center>
     </div>    <footer>
         <p>&copy; 2024 VLESS HUB. All rights reserved.</p>
         <p>
