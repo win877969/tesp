@@ -416,12 +416,12 @@ async function getAllConfigVless(hostName) {
         header22 {
             background: rgba(0, 0, 0, 0.9);
             padding: 10px 20px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
             position: fixed;
             width: 100%;
             top: 0;
             left: 0;
-            z-index: 1000;
+            z-index: 600;
         }
  
 
@@ -787,7 +787,7 @@ async function getAllConfigVless(hostName) {
             background: rgba(0, 0, 0, 0.9);
             color: #e0e0e0;
             text-align: center;
-            padding: 5px;
+            padding: 4px;
             box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
             width: 100%;
             position: relative;
@@ -853,21 +853,20 @@ async function getAllConfigVless(hostName) {
 <br>» investors.spotify.com.xvp.bmkg.xyz
 <br>» cache.netflix.com.xvp.bmkg.xyz
 <br>» zaintest.vuclip.com.xvp.bmkg.xyz
-<br>» io.ruangguru.com.xvp.bmkg.xyz</DIV>
-        
+<br>» io.ruangguru.com.xvp.bmkg.xyz</b></DIV>
+        <hr class="config-divider" />
         <div id="vless" class="content active">
             ${vlessConfigs}
         </div>
         <div id="clash" class="content">
             ${clashConfigs}
             </div>
-        
     </div>    <footer>
         <p>&copy; 2024 All rights reserved
             | <a href="https://wa.me/6281335135082"><button class="button877"><img src="https://raw.githubusercontent.com/win877969/NS1/refs/heads/main/img/icon1.png" alt="HTML tutorial" style="width:100px;height:25px;"></button></p>
     </footer><script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    
+    </div>
      <script>
         function showContent(contentId) {
             const contents = document.querySelectorAll('.content');
