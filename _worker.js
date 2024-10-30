@@ -812,7 +812,7 @@ async function getAllConfigVless(hostName) {
     <div class="container"> <p class="noted877">.</p>
         <div class="card__top">
           <img src="https://raw.githubusercontent.com/win877969/NS1/refs/heads/main/img/icon.png" alt="VLESS logo" loading="lazy">                  
-        </div>
+        </div></div>
   <div class="nav-buttons">
             <button class="button2" onclick="showContent('vless')">LIST VLESS</button>
             <button class="button2" onclick="showContent('clash')">LIST CLASH</button>        </div>
