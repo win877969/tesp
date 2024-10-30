@@ -787,7 +787,7 @@ async function getAllConfigVless(hostName) {
             background: rgba(0, 0, 0, 0.9);
             color: #e0e0e0;
             text-align: center;
-            padding: 10px;
+            padding: 5px;
             box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
             width: 100%;
             position: relative;
@@ -831,17 +831,17 @@ async function getAllConfigVless(hostName) {
     </header22>       
     
     
-    <div class="overlay"></div>
-    <div class="container"> <p class="noted877">.</p>
+    
+    <p class="noted877">.<br>.<br>.</p>
         <div class="card__top">
           <img src="https://raw.githubusercontent.com/win877969/NS1/refs/heads/main/img/icon.png" alt="VLESS logo" loading="lazy">                  
         </div>
   <div class="nav-buttons">
             <button class="button2" onclick="showContent('vless')">LIST VLESS</button>
             <button class="button2" onclick="showContent('clash')">LIST CLASH</button>
-      <center>
+     </div> <center>
             <p class="noted"> Noted: Pastikan untuk memeriksa konfigurasi dengan teliti sebelum digunakan.</p>
-            </center></div>
+            </center>
         <div class="config-section">
         <strong><b>DAFTAR WILCARD:</strong>
 <br>» ava.game.naver.com.xvp.bmkg.xyz
