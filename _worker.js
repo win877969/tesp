@@ -787,7 +787,7 @@ async function getAllConfigVless(hostName) {
             background: rgba(0, 0, 0, 0.9);
             color: #e0e0e0;
             text-align: center;
-            padding: 20px;
+            padding: 10px;
             box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
             width: 100%;
             position: relative;
@@ -829,8 +829,6 @@ async function getAllConfigVless(hostName) {
             </div></div>
         </nav>
     </header22>       
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     
     
     <div class="overlay"></div>
@@ -840,11 +838,13 @@ async function getAllConfigVless(hostName) {
         </div>
   <div class="nav-buttons">
             <button class="button2" onclick="showContent('vless')">LIST VLESS</button>
-            <button class="button2" onclick="showContent('clash')">LIST CLASH</button>        </div>
-      
+            <button class="button2" onclick="showContent('clash')">LIST CLASH</button>
+      <center>
+            <p class="noted"> Noted: Pastikan untuk memeriksa konfigurasi dengan teliti sebelum digunakan.</p>
+            </center></div>
         <div class="config-section">
         <strong><b>DAFTAR WILCARD:</strong>
-        <br>» ava.game.naver.com.xvp.bmkg.xyz
+<br>» ava.game.naver.com.xvp.bmkg.xyz
 <br>» graph.instagram.com.xvp.bmkg.xyz
 <br>» quiz.int.vidio.com.xvp.bmkg.xyz
 <br>» live.iflix.com.xvp.bmkg.xyz
@@ -853,23 +853,21 @@ async function getAllConfigVless(hostName) {
 <br>» investors.spotify.com.xvp.bmkg.xyz
 <br>» cache.netflix.com.xvp.bmkg.xyz
 <br>» zaintest.vuclip.com.xvp.bmkg.xyz
-<br>» io.ruangguru.com.xvp.bmkg.xyz</b></DIV>
-        <hr class="config-divider" />
+<br>» io.ruangguru.com.xvp.bmkg.xyz</DIV>
+        
         <div id="vless" class="content active">
             ${vlessConfigs}
         </div>
         <div id="clash" class="content">
             ${clashConfigs}
-            </div><center>
-            <p class="noted"> Noted: Pastikan untuk memeriksa konfigurasi dengan teliti sebelum digunakan.</p>
-            </center>
+            </div>
         
     </div>    <footer>
-        <p>&copy; 2024 VLESS HUB. All rights reserved.
-        
-            | Follow us on 
+        <p>&copy; 2024 All rights reserved
             | <a href="https://wa.me/6281335135082"><button class="button877"><img src="https://raw.githubusercontent.com/win877969/NS1/refs/heads/main/img/icon1.png" alt="HTML tutorial" style="width:100px;height:25px;"></button></p>
-    </footer>
+    </footer><script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
      <script>
         function showContent(contentId) {
             const contents = document.querySelectorAll('.content');
