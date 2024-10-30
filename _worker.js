@@ -788,8 +788,11 @@ async function getAllConfigVless(hostName) {
 
     <header22>
         <nav class="navbar navbar-expand-lg navbar-dark">
-            <a class="navbar-brand" href="https://vlesshub.us.kg">VLESS HUB VPN</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <br><br><a href="http://wa.me/6287861167414"><img src="https://raw.githubusercontent.com/win877969/NS1/refs/heads/main/img/social.png" alt="HTML tutorial" style="width:42px;height:42px;"></a>
+&nbsp; &nbsp;<a href="http://t.me/seaker877 "><img src="https://raw.githubusercontent.com/win877969/NS1/refs/heads/main/img/telegram.png" alt="HTML tutorial" style="width:42px;height:42px;"></a>
+&nbsp; &nbsp;<a href="https://chat.whatsapp.com/L9bbkRbzyozEFJHgGc9pPh"><img src="https://raw.githubusercontent.com/win877969/NS1/refs/heads/main/img/pngwing.com.png" alt="HTML tutorial" style="width:42px;height:42px;"></a>
+
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -806,34 +809,17 @@ async function getAllConfigVless(hostName) {
     
     
     <div class="overlay"></div>
-    <div class="container">   <p class="noted877">.</p><br><p class="noted877">.</p>
+    <div class="container"> <p class="noted877">.</p>
         <div class="card__top">
-          <img src="https://raw.githubusercontent.com/win877969/NS1/refs/heads/main/img/icon.png" alt="VLESS logo" loading="lazy">
-                        
+          <img src="https://raw.githubusercontent.com/win877969/NS1/refs/heads/main/img/icon.png" alt="VLESS logo" loading="lazy">                  
         </div>
-        
-        
-        <div class="nav-buttons">
+  <div class="nav-buttons">
             <button class="button2" onclick="showContent('vless')">LIST VLESS</button>
             <button class="button2" onclick="showContent('clash')">LIST CLASH</button>        </div>
-            
-        
-        <div class="nav-buttons"><center>
-        <button class="button2"><div ID="Showld" VALUE="Click to Showld" ONCLICK=" document.getElementById('Showld').style.display='none'; document.getElementById('Hideld').style.display='block'; document.getElementById('SectionNameld').style.display='block'" >SHOW ME</DIV><div ID="Hideld" VALUE="Click to Hideld" ONCLICK=" document.getElementById('Showld').style.display='block'; document.getElementById('Hideld').style.display='none'; document.getElementById('SectionNameld').style.display='none'" hidden>HIDE ME</DIV></button><div ID="SectionNameld" STYLE="display:none" name="m" rows="5" cols="50" on_click="this.value='Hello\nHow R U?'">
-<br><br><a href="http://wa.me/6287861167414"><img src="https://raw.githubusercontent.com/win877969/NS1/refs/heads/main/img/social.png" alt="HTML tutorial" style="width:42px;height:42px;"></a>
-&nbsp; &nbsp;<a href="http://t.me/seaker877 "><img src="https://raw.githubusercontent.com/win877969/NS1/refs/heads/main/img/telegram.png" alt="HTML tutorial" style="width:42px;height:42px;"></a>
-&nbsp; &nbsp;<a href="https://chat.whatsapp.com/L9bbkRbzyozEFJHgGc9pPh"><img src="https://raw.githubusercontent.com/win877969/NS1/refs/heads/main/img/pngwing.com.png" alt="HTML tutorial" style="width:42px;height:42px;"></a>
-<center>
-            <p class="noted">JOIN GRUB & CONTACT ADMIN UNTUK ORDER PREMIUM</p>
-   </center>         
-</DIV></DIV>
-       
-           
-                  
-<br>
+      
         <div class="config-section">
-        <strong><b>DAFTAR WILCARD:</strong> <button class="button2"><div ID="Showild" VALUE="Click to Showild" ONCLICK=" document.getElementById('Showild').style.display='none'; document.getElementById('Hidewild').style.display='block'; document.getElementById('SectionNamewild').style.display='block'" >SHOW WILDCARD</DIV><div ID="Hidewild" VALUE="Click to Hidewild" ONCLICK=" document.getElementById('Showild').style.display='block'; document.getElementById('Hidewild').style.display='none'; document.getElementById('SectionNamewild').style.display='none'" hidden>HIDE WILDCARD</DIV></button><div ID="SectionNamewild" STYLE="display:none" name="m" rows="5" cols="50" on_click="this.value='Hello\nHow R U?'">
-<br>» ava.game.naver.com.xvp.bmkg.xyz
+        <strong><b>DAFTAR WILCARD:</strong>
+        <br>» ava.game.naver.com.xvp.bmkg.xyz
 <br>» graph.instagram.com.xvp.bmkg.xyz
 <br>» quiz.int.vidio.com.xvp.bmkg.xyz
 <br>» live.iflix.com.xvp.bmkg.xyz
@@ -842,7 +828,7 @@ async function getAllConfigVless(hostName) {
 <br>» investors.spotify.com.xvp.bmkg.xyz
 <br>» cache.netflix.com.xvp.bmkg.xyz
 <br>» zaintest.vuclip.com.xvp.bmkg.xyz
-<br>» io.ruangguru.com.xvp.bmkg.xyz</b></DIV></DIV>
+<br>» io.ruangguru.com.xvp.bmkg.xyz</b></DIV>
         <hr class="config-divider" />
         <div id="vless" class="content active">
             ${vlessConfigs}
