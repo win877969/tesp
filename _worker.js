@@ -830,14 +830,48 @@ async function getAllConfigVless(hostName) {
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="https://stats.uptimerobot.com/nt5hNzVvVM">Server Monitoring</a>
+                        <a class="nav-link" href="https://rg.bmkg.xyz">TSL RUANGGURU</a>
                     </li>
 <li class="nav-item">
-                        <a class="nav-link" href="https://stats.uptimerobot.com/nt5hNzVvVM">Server Monitoring</a>
+                        <a class="nav-link" href="https://ilped.bmkg.xyz">TSL ILPED</a>
                     </li>
 <li class="nav-item">
-                        <a class="nav-link" href="https://stats.uptimerobot.com/nt5hNzVvVM">Server Monitoring</a>
+                        <a class="nav-link" href="https://kb.bmkg.xyz">TSL BERLAJAR</a>
                     </li>
+    <li class="nav-item">
+                        <a class="nav-link" href="https://xedu.bmkg.xyz">XL EDUKASI</a>
+                    </li>
+ <li class="nav-item">
+                        <a class="nav-link" href="https://vidio.bmkg.xyz">XL VIDIO</a>
+                    </li>
+   <li class="nav-item">
+                        <a class="nav-link" href="https://ifx.bmkg.xyz">XL IFLIX</a>
+                    </li>
+  <li class="nav-item">
+                        <a class="nav-link" href="https://netx.bmkg.xyz">XL NETFLIX</a>
+                    </li>
+          <li class="nav-item">
+                        <a class="nav-link" href="https://xlgm.bmkg.xyz">XL GAME</a>
+                    </li>
+<li class="nav-item">
+                        <a class="nav-link" href="https://wlg.bmkg.xyz">XL WLG</a>
+                    </li>
+<li class="nav-item">
+                        <a class="nav-link" href="https://xcl.bmkg.xyz">XL XCL</a>
+                    </li>
+<li class="nav-item">
+                        <a class="nav-link" href="https://flx.bmkg.xyz">XL FLEX</a>
+                    </li>
+<li class="nav-item">
+                        <a class="nav-link" href="https://xcp.bmkg.xyz">XL XCP/XCV</a>
+                    </li>
+<li class="nav-item">
+                        <a class="nav-link" href="https://ssrl.bmkg.xyz">SUSIROL</a>
+                    </li>
+<li class="nav-item">
+                        <a class="nav-link" href="https://apfn.bmkg.xyz">APP FUN</a>
+                    </li>
+
                 </ul>
             </div></div>
         </nav>
