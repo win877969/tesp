@@ -399,528 +399,509 @@ async function getAllConfigVless(hostName) {
 `;
     }
     const htmlConfigs = `
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <title>Vless | XVPN | CLoudFlare</title>
+    <meta charset="utf-8">
+    <title>DarkPan - Bootstrap 5 Admin Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="https://raw.githubusercontent.com/win877969/webjumpakawan/refs/heads/main/scr/" rel="icon">
+
+    <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4C+6PCWJ+8zzHcXQjXGp6n5Yh9rX0x5fOdPaOqO+e2X4R5C1aE/BSqPIG+8y3O6APa8w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="icon" href="https://raw.githubusercontent.com/win877969/NS1/refs/heads/main/img/icon.png" type="image/png">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@500;700&display=swap" rel="stylesheet"> 
+    
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: 'Helvetica Neue', Arial, sans-serif;
-            color: #f5f5f5;
-            background-color: black;
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-            min-height: 100vh;
-            overflow: hidden;
-        }
-        .containerlogo {
-                background-color: #1d1d1d;
-                /* Warna gelap dengan nuansa lebih dalam */
-                border-radius: 10px;
-                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
-                padding: 30px;
-                width: 100%;
-                max-width: 600px;
-                border: 1px solid #1d1d1d;
-                position: relative;
-                /* Untuk positioning watermark */
-            }
-        .container {
-            max-width: 1200px;
-            width: 100%;
-            margin: 3px;
-            background: rgba(0, 0, 0, 0.9);
-            backdrop-filter: blur(8px);
-            -webkit-backdrop-filter: blur(8px);
-            animation: fadeIn 1s ease-in-out;
-            overflow-y: auto;
-            max-height: 100vh;
-        }
+    <!-- Libraries Stylesheet -->
+    <link href="https://raw.githubusercontent.com/win877969/webjumpakawan/refs/heads/main/scr/owl.carousel.min.css" rel="stylesheet">
+    <link href="https://raw.githubusercontent.com/win877969/webjumpakawan/refs/heads/main/scr/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
 
-        .overlay {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(15, 15, 15, 0.4);
-            z-index: -1;
-        }
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="https://raw.githubusercontent.com/win877969/webjumpakawan/refs/heads/main/scr/bootstrap.min.css" rel="stylesheet">
 
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
-        .header {
-            text-align: center;
-            margin-bottom: 40px;
-            margin-top: 10px;
-        }
-
-        .header h1 {
-            font-size: 42px;
-            color: #448998;
-            margin: 0;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 4px;
-        }
-        .button2 {
-                background-color: #ffa500;
-                border: none;
-                color: #1e1e1e;
-                padding: 6px 12px;
-                text-align: center;
-                text-decoration: none;
-                font-size: 20px;
-                border: 1px solid #3c3c3c;
-                border-radius: 5px;
-                animation: slideIn 0.5s ease-in-out;
-                box-shadow: inset 0 10px 20px rgba(0, 0, 0, 0.5);
-                transition: background-color 0.3s ease, transform 0.2s ease;
-            }
-
-            .button2:hover {
-                background-color: #ff8c00;
-                transform: scale(1.05);
-            }
-        .button877 {
-                background-color: #000000;
-                border: none;
-                color: #000000;
-                padding: 6px 12px;
-                text-align: center;
-                text-decoration: none;
-                font-size: 20px;
-                border: 1px solid #000000;
-                border-radius: 5px;
-                animation: slideIn 0.5s ease-in-out;
-                box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.5);
-                transition: background-color 0.3s ease, transform 0.2s ease;
-            }
-
-            .button877:hover {
-                background-color: #ff8c00;
-                transform: scale(1.05);
-            }
-           .card {
-            position: relative;
-            width: 100%;
-            max-width: 600px;
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(8px);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
-            border-radius: 12px;
-            padding: 15px;
-            box-sizing: border-box;
-            margin: 15px;
-        }
-        .card:hover {
-            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.8);
-            transform: translateY(-5px);
-        }
-        .card__top {
-            height: auto;
-            overflow: hidden;
-            border-radius: 8px;
-            margin-bottom: 15px;
-            position: relative;
-        }
-        .card__top img {
-            width: 100%;
-            height: auto;
-            object-fit: cover;
-            display: block;
-        }
-        .nav-buttons {
-            display: flex;
-            justify-content: center;
-            margin-top: 20px;
-            margin-bottom: 20px;
-            gap: 10px;
-        }
-
-        .nav-buttons .button {
-            background-color: transparent;
-            border: 3px solid #448998;
-            color: #448998;
-            padding: 6px 12px;
-            font-size: 20px;
-            border-radius: 4px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            text-transform: uppercase;
-            letter-spacing: 3px;
-        }
-
-        .nav-buttons .button:hover {
-            background-color: #448998;
-            color: #fff;
-            transform: scale(1.05);
-        }
-
-        .content {
-            display: none;
-            opacity: 0;
-            transition: opacity 0.5s ease-in-out;
-        }
-
-        .content.active {
-            display: block;
-            opacity: 1;
-        }
-            .noted877 {
-                margin-top: 20px;
-                color: #000000;
-                font-weight: bold;
-                font-style: italic;
-            }
-            .noted {
-                margin-top: 20px;
-                color: #ff4500;
-                font-weight: bold;
-                font-style: italic;
-            }
-
-            .noted1 {
-                margin-top: 20px;
-                color: #ffa500;
-                font-weight: bold;
-                font-style: italic;
-                line-height: 1.5;
-            }
-        .config-section {
-            background: rgba(0, 0, 0, 0.5);
-            background-color: #3c3c3c;
-            padding: 20px;
-            color: #ffffff;
-            margin-right: 5px;
-            margin-left: 5px;
-            border: 2px solid #448998;
-            border-radius: 10px;
-            position: relative;
-            animation: slideIn 0.5s ease-in-out;
-            box-shadow: inset 0 10px 20px rgba(0, 0, 0, 0.5);
-        }
-        .config-sectionlogo {
-            background: rgba(0, 0, 0, 0.5);
-            background-color: #000000;
-            padding: 20px;
-            color: #448998;
-            margin-right: 5px;
-            margin-left: 5px;
-            border: 2px solid #000000;
-            border-radius: 10px;
-            position: relative;
-            animation: slideIn 0.5s ease-in-out;
-            box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.5);
-        }
-        @keyframes slideIn {
-            from { transform: translateX(-30px); opacity: 0; }
-            to { transform: translateX(0); opacity: 1; }
-        }
-
-        .config-section h3 {
-            margin-top: 0;
-            color: #e1b12c;
-            font-size: 28px;
-        }
-
-        .config-section p {
-            color: #f5f5f5;
-            font-size: 16px;
-        }
-
-        .config-toggle {
-            margin-bottom: 10px;
-        }
-
-        .config-content {
-            display: none;
-        }
-
-        .config-content.active {
-            display: block;
-        }
-
-        .config-block {
-            margin-bottom: 10px;
-            padding: 15px;
-            border-radius: 10px;
-            background-color: rgba(0, 0, 0, 0.2);
-            transition: background-color 0.3s ease;
-        }
-
-        .config-block h4 {
-            margin-bottom: 8px;
-            color: #f39c12;
-            font-size: 22px;
-            font-weight: 600;
-        }
-
-        .config {
-            background-color: rgba(0, 0, 0, 0.2);
-            padding: 15px;
-            border-radius: 5px;
-            border: 2px solid #448998;
-            color: #f5f5f5;
-            word-wrap: break-word;
-            white-space: pre-wrap;
-            font-family: 'Courier New', Courier, monospace;
-            font-size: 15px;
-        }
-        .button {
-            background-color: transparent;
-            border: 2px solid #448998;
-            color: #448998;
-            padding: 4px 8px;
-            font-size: 12px;
-            border-radius: 3px;
-            cursor: pointer;
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            transition: all 0.3s ease;
-            text-transform: uppercase;
-            letter-spacing: 1.5px;
-            margin-right: 4px;
-        }
-
-        .button i {
-            margin-right: 3px;
-        }
-
-        .button:hover {
-            background-color: #448998;
-            color: #fff;
-            transform: scale(1.0);
-        }
-
-        .config-divider {
-            border: none;
-            height: 1px;
-            background: linear-gradient(to right, transparent, #fff, transparent);
-            margin: 20px 0;
-        }
-         .watermarkfooter {
-                position: absolute;
-                bottom: 20px;
-                left: 50%;
-                transform: translateX(-50%);
-                font-size: 0.8rem;
-                color: rgba(255, 255, 255, 0.5);
-                /* Warna watermark dengan transparansi */
-                text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-                /* Bayangan teks untuk keterbacaan */
-                font-weight: bold;
-                text-align: center;
-                /* Pusatkan teks watermark */
-            }
-        .watermark {
-            position: absolute;
-            bottom: 20px;
-            left: 50%;
-            transform: translateX(-50%);
-            font-size: 0.8rem;
-            color: rgba(255, 255, 255, 0.5);
-            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-            font-weight: bold;
-            text-align: center;
-        }
-        .watermark a {
-            color: #ffa500;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        .watermark a:hover {
-            color: #ffa500;
-        }
-
-        @media (max-width: 768px) {
-            .header h1 {
-                font-size: 32px;
-            }
-
-            .config-section h3 {
-                font-size: 24px;
-            }
-
-            .config-block h4 {
-                font-size: 20px;
-            }
-
-            .domain-list {
-                font-size: 10px;
-            }
-        }
-
-        footer {
-            background: rgba(0, 0, 0, 0.9);
-            color: #e0e0e0;
-            text-align: center;
-            padding: 10px;
-            box-shadow: 0 -1px 1px rgba(0, 0, 0, 0.3);
-            width: 100%;
-            position: relative;
-            bottom: 0;
-            margin: 0;
-        }
-        footer a {
-            color: #f7951e;
-            text-decoration: none;
-            font-weight: 700;
-        }
-        footer a:hover {
-            text-decoration: underline;
-        }
-        header22 {
-            background: rgba(0, 0, 0, 0.9);
-            padding: 10px 20px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-            position: fixed;
-            width: 100%;
-            top: 0;
-            left: 0;
-            z-index: 600;
-        }
-        .navbar-brand22 {
-            color: #f7951e;
-            font-weight: 700;
-        }
-        .navbar-brand22:hover {
-            color: #e0e0e0;
-        }
-        .navbar-nav .nav-link {
-            color: #f7951e;
-            font-weight: 700;
-        }
-        .navbar-nav .nav-link:hover {
-            color: #e0e0e0;
-        }
-       
-    </style>
+    <!-- Template Stylesheet -->
+    <link href="https://raw.githubusercontent.com/win877969/webjumpakawan/refs/heads/main/scr/style.css" rel="stylesheet">
 </head>
-<body>      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    
+
+<body>
+    <div class="container-fluid position-relative d-flex p-0">
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-dark position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+
+        <!-- Sidebar Start -->
+        <div class="sidebar pe-4 pb-3">
+            <nav class="navbar bg-secondary navbar-dark">
+                <a href="index.html" class="navbar-brand mx-4 mb-3">
+                    <h3 class="text-primary"><i class="fa fa-user-edit me-2"></i>DarkPan</h3>
+                </a>
+                <div class="d-flex align-items-center ms-4 mb-4">
+                    <div class="position-relative">
+                        <img class="rounded-circle" src="img/user.jpg" alt="" style="width: 40px; height: 40px;">
+                        <div class="bg-success rounded-circle border border-2 border-white position-absolute end-0 bottom-0 p-1"></div>
+                    </div>
+                    <div class="ms-3">
+                        <h6 class="mb-0">Jhon Doe</h6>
+                        <span>Admin</span>
+                    </div>
+                </div>
+                <div class="navbar-nav w-100">
+                    <a href="index.html" class="nav-item nav-link active"><i class="fa fa-tachometer-alt me-2"></i>Dashboard</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fa fa-laptop me-2"></i>Elements</a>
+                        <div class="dropdown-menu bg-transparent border-0">
+                            <a href="button.html" class="dropdown-item">Buttons</a>
+                            <a href="typography.html" class="dropdown-item">Typography</a>
+                            <a href="element.html" class="dropdown-item">Other Elements</a>
+                        </div>
+                    </div>
+                    <a href="widget.html" class="nav-item nav-link"><i class="fa fa-th me-2"></i>Widgets</a>
+                    <a href="form.html" class="nav-item nav-link"><i class="fa fa-keyboard me-2"></i>Forms</a>
+                    <a href="table.html" class="nav-item nav-link"><i class="fa fa-table me-2"></i>Tables</a>
+                    <a href="chart.html" class="nav-item nav-link"><i class="fa fa-chart-bar me-2"></i>Charts</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="far fa-file-alt me-2"></i>Pages</a>
+                        <div class="dropdown-menu bg-transparent border-0">
+                            <a href="signin.html" class="dropdown-item">Sign In</a>
+                            <a href="signup.html" class="dropdown-item">Sign Up</a>
+                            <a href="404.html" class="dropdown-item">404 Error</a>
+                            <a href="blank.html" class="dropdown-item">Blank Page</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- Sidebar End -->
+
+
+        <!-- Content Start -->
+        <div class="content">
+            <!-- Navbar Start -->
+            <nav class="navbar navbar-expand bg-secondary navbar-dark sticky-top px-4 py-0">
+                <a href="index.html" class="navbar-brand d-flex d-lg-none me-4">
+                    <h2 class="text-primary mb-0"><i class="fa fa-user-edit"></i></h2>
+                </a>
+                <a href="#" class="sidebar-toggler flex-shrink-0">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <form class="d-none d-md-flex ms-4">
+                    <input class="form-control bg-dark border-0" type="search" placeholder="Search">
+                </form>
+                <div class="navbar-nav align-items-center ms-auto">
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                            <i class="fa fa-envelope me-lg-2"></i>
+                            <span class="d-none d-lg-inline-flex">Message</span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-end bg-secondary border-0 rounded-0 rounded-bottom m-0">
+                            <a href="#" class="dropdown-item">
+                                <div class="d-flex align-items-center">
+                                    <img class="rounded-circle" src="img/user.jpg" alt="" style="width: 40px; height: 40px;">
+                                    <div class="ms-2">
+                                        <h6 class="fw-normal mb-0">Jhon send you a message</h6>
+                                        <small>15 minutes ago</small>
+                                    </div>
+                                </div>
+                            </a>
+                            <hr class="dropdown-divider">
+                            <a href="#" class="dropdown-item">
+                                <div class="d-flex align-items-center">
+                                    <img class="rounded-circle" src="img/user.jpg" alt="" style="width: 40px; height: 40px;">
+                                    <div class="ms-2">
+                                        <h6 class="fw-normal mb-0">Jhon send you a message</h6>
+                                        <small>15 minutes ago</small>
+                                    </div>
+                                </div>
+                            </a>
+                            <hr class="dropdown-divider">
+                            <a href="#" class="dropdown-item">
+                                <div class="d-flex align-items-center">
+                                    <img class="rounded-circle" src="img/user.jpg" alt="" style="width: 40px; height: 40px;">
+                                    <div class="ms-2">
+                                        <h6 class="fw-normal mb-0">Jhon send you a message</h6>
+                                        <small>15 minutes ago</small>
+                                    </div>
+                                </div>
+                            </a>
+                            <hr class="dropdown-divider">
+                            <a href="#" class="dropdown-item text-center">See all message</a>
+                        </div>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                            <i class="fa fa-bell me-lg-2"></i>
+                            <span class="d-none d-lg-inline-flex">Notificatin</span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-end bg-secondary border-0 rounded-0 rounded-bottom m-0">
+                            <a href="#" class="dropdown-item">
+                                <h6 class="fw-normal mb-0">Profile updated</h6>
+                                <small>15 minutes ago</small>
+                            </a>
+                            <hr class="dropdown-divider">
+                            <a href="#" class="dropdown-item">
+                                <h6 class="fw-normal mb-0">New user added</h6>
+                                <small>15 minutes ago</small>
+                            </a>
+                            <hr class="dropdown-divider">
+                            <a href="#" class="dropdown-item">
+                                <h6 class="fw-normal mb-0">Password changed</h6>
+                                <small>15 minutes ago</small>
+                            </a>
+                            <hr class="dropdown-divider">
+                            <a href="#" class="dropdown-item text-center">See all notifications</a>
+                        </div>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                            <img class="rounded-circle me-lg-2" src="img/user.jpg" alt="" style="width: 40px; height: 40px;">
+                            <span class="d-none d-lg-inline-flex">John Doe</span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-end bg-secondary border-0 rounded-0 rounded-bottom m-0">
+                            <a href="#" class="dropdown-item">My Profile</a>
+                            <a href="#" class="dropdown-item">Settings</a>
+                            <a href="#" class="dropdown-item">Log Out</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <!-- Navbar End -->
+
+
+            <!-- Sale & Revenue Start -->
+            <div class="container-fluid pt-4 px-4">
+                <div class="row g-4">
+                    <div class="col-sm-6 col-xl-3">
+                        <div class="bg-secondary rounded d-flex align-items-center justify-content-between p-4">
+                            <i class="fa fa-chart-line fa-3x text-primary"></i>
+                            <div class="ms-3">
+                                <p class="mb-2">Today Sale</p>
+                                <h6 class="mb-0">$1234</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-xl-3">
+                        <div class="bg-secondary rounded d-flex align-items-center justify-content-between p-4">
+                            <i class="fa fa-chart-bar fa-3x text-primary"></i>
+                            <div class="ms-3">
+                                <p class="mb-2">Total Sale</p>
+                                <h6 class="mb-0">$1234</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-xl-3">
+                        <div class="bg-secondary rounded d-flex align-items-center justify-content-between p-4">
+                            <i class="fa fa-chart-area fa-3x text-primary"></i>
+                            <div class="ms-3">
+                                <p class="mb-2">Today Revenue</p>
+                                <h6 class="mb-0">$1234</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-xl-3">
+                        <div class="bg-secondary rounded d-flex align-items-center justify-content-between p-4">
+                            <i class="fa fa-chart-pie fa-3x text-primary"></i>
+                            <div class="ms-3">
+                                <p class="mb-2">Total Revenue</p>
+                                <h6 class="mb-0">$1234</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Sale & Revenue End -->
+
+
+            <!-- Sales Chart Start -->
+            <div class="container-fluid pt-4 px-4">
+                <div class="row g-4">
+                    <div class="col-sm-12 col-xl-6">
+                        <div class="bg-secondary text-center rounded p-4">
+                            <div class="d-flex align-items-center justify-content-between mb-4">
+                                <h6 class="mb-0">Worldwide Sales</h6>
+                                <a href="">Show All</a>
+                            </div>
+                            <canvas id="worldwide-sales"></canvas>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-xl-6">
+                        <div class="bg-secondary text-center rounded p-4">
+                            <div class="d-flex align-items-center justify-content-between mb-4">
+                                <h6 class="mb-0">Salse & Revenue</h6>
+                                <a href="">Show All</a>
+                            </div>
+                            <canvas id="salse-revenue"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Sales Chart End -->
+
+
+            <!-- Recent Sales Start -->
+            <div class="container-fluid pt-4 px-4">
+                <div class="bg-secondary text-center rounded p-4">
+                    <div class="d-flex align-items-center justify-content-between mb-4">
+                        <h6 class="mb-0">Recent Salse</h6>
+                        <a href="">Show All</a>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table text-start align-middle table-bordered table-hover mb-0">
+                            <thead>
+                                <tr class="text-white">
+                                    <th scope="col"><input class="form-check-input" type="checkbox"></th>
+                                    <th scope="col">Date</th>
+                                    <th scope="col">Invoice</th>
+                                    <th scope="col">Customer</th>
+                                    <th scope="col">Amount</th>
+                                    <th scope="col">Status</th>
+                                    <th scope="col">Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><input class="form-check-input" type="checkbox"></td>
+                                    <td>01 Jan 2045</td>
+                                    <td>INV-0123</td>
+                                    <td>Jhon Doe</td>
+                                    <td>$123</td>
+                                    <td>Paid</td>
+                                    <td><a class="btn btn-sm btn-primary" href="">Detail</a></td>
+                                </tr>
+                                <tr>
+                                    <td><input class="form-check-input" type="checkbox"></td>
+                                    <td>01 Jan 2045</td>
+                                    <td>INV-0123</td>
+                                    <td>Jhon Doe</td>
+                                    <td>$123</td>
+                                    <td>Paid</td>
+                                    <td><a class="btn btn-sm btn-primary" href="">Detail</a></td>
+                                </tr>
+                                <tr>
+                                    <td><input class="form-check-input" type="checkbox"></td>
+                                    <td>01 Jan 2045</td>
+                                    <td>INV-0123</td>
+                                    <td>Jhon Doe</td>
+                                    <td>$123</td>
+                                    <td>Paid</td>
+                                    <td><a class="btn btn-sm btn-primary" href="">Detail</a></td>
+                                </tr>
+                                <tr>
+                                    <td><input class="form-check-input" type="checkbox"></td>
+                                    <td>01 Jan 2045</td>
+                                    <td>INV-0123</td>
+                                    <td>Jhon Doe</td>
+                                    <td>$123</td>
+                                    <td>Paid</td>
+                                    <td><a class="btn btn-sm btn-primary" href="">Detail</a></td>
+                                </tr>
+                                <tr>
+                                    <td><input class="form-check-input" type="checkbox"></td>
+                                    <td>01 Jan 2045</td>
+                                    <td>INV-0123</td>
+                                    <td>Jhon Doe</td>
+                                    <td>$123</td>
+                                    <td>Paid</td>
+                                    <td><a class="btn btn-sm btn-primary" href="">Detail</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <!-- Recent Sales End -->
+
+
+            <!-- Widgets Start -->
+            <div class="container-fluid pt-4 px-4">
+                <div class="row g-4">
+                    <div class="col-sm-12 col-md-6 col-xl-4">
+                        <div class="h-100 bg-secondary rounded p-4">
+                            <div class="d-flex align-items-center justify-content-between mb-2">
+                                <h6 class="mb-0">Messages</h6>
+                                <a href="">Show All</a>
+                            </div>
+                            <div class="d-flex align-items-center border-bottom py-3">
+                                <img class="rounded-circle flex-shrink-0" src="img/user.jpg" alt="" style="width: 40px; height: 40px;">
+                                <div class="w-100 ms-3">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h6 class="mb-0">Jhon Doe</h6>
+                                        <small>15 minutes ago</small>
+                                    </div>
+                                    <span>Short message goes here...</span>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center border-bottom py-3">
+                                <img class="rounded-circle flex-shrink-0" src="img/user.jpg" alt="" style="width: 40px; height: 40px;">
+                                <div class="w-100 ms-3">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h6 class="mb-0">Jhon Doe</h6>
+                                        <small>15 minutes ago</small>
+                                    </div>
+                                    <span>Short message goes here...</span>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center border-bottom py-3">
+                                <img class="rounded-circle flex-shrink-0" src="img/user.jpg" alt="" style="width: 40px; height: 40px;">
+                                <div class="w-100 ms-3">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h6 class="mb-0">Jhon Doe</h6>
+                                        <small>15 minutes ago</small>
+                                    </div>
+                                    <span>Short message goes here...</span>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center pt-3">
+                                <img class="rounded-circle flex-shrink-0" src="img/user.jpg" alt="" style="width: 40px; height: 40px;">
+                                <div class="w-100 ms-3">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h6 class="mb-0">Jhon Doe</h6>
+                                        <small>15 minutes ago</small>
+                                    </div>
+                                    <span>Short message goes here...</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-xl-4">
+                        <div class="h-100 bg-secondary rounded p-4">
+                            <div class="d-flex align-items-center justify-content-between mb-4">
+                                <h6 class="mb-0">Calender</h6>
+                                <a href="">Show All</a>
+                            </div>
+                            <div id="calender"></div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-xl-4">
+                        <div class="h-100 bg-secondary rounded p-4">
+                            <div class="d-flex align-items-center justify-content-between mb-4">
+                                <h6 class="mb-0">To Do List</h6>
+                                <a href="">Show All</a>
+                            </div>
+                            <div class="d-flex mb-2">
+                                <input class="form-control bg-dark border-0" type="text" placeholder="Enter task">
+                                <button type="button" class="btn btn-primary ms-2">Add</button>
+                            </div>
+                            <div class="d-flex align-items-center border-bottom py-2">
+                                <input class="form-check-input m-0" type="checkbox">
+                                <div class="w-100 ms-3">
+                                    <div class="d-flex w-100 align-items-center justify-content-between">
+                                        <span>Short task goes here...</span>
+                                        <button class="btn btn-sm"><i class="fa fa-times"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center border-bottom py-2">
+                                <input class="form-check-input m-0" type="checkbox">
+                                <div class="w-100 ms-3">
+                                    <div class="d-flex w-100 align-items-center justify-content-between">
+                                        <span>Short task goes here...</span>
+                                        <button class="btn btn-sm"><i class="fa fa-times"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center border-bottom py-2">
+                                <input class="form-check-input m-0" type="checkbox" checked>
+                                <div class="w-100 ms-3">
+                                    <div class="d-flex w-100 align-items-center justify-content-between">
+                                        <span><del>Short task goes here...</del></span>
+                                        <button class="btn btn-sm text-primary"><i class="fa fa-times"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center border-bottom py-2">
+                                <input class="form-check-input m-0" type="checkbox">
+                                <div class="w-100 ms-3">
+                                    <div class="d-flex w-100 align-items-center justify-content-between">
+                                        <span>Short task goes here...</span>
+                                        <button class="btn btn-sm"><i class="fa fa-times"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center pt-2">
+                                <input class="form-check-input m-0" type="checkbox">
+                                <div class="w-100 ms-3">
+                                    <div class="d-flex w-100 align-items-center justify-content-between">
+                                        <span>Short task goes here...</span>
+                                        <button class="btn btn-sm"><i class="fa fa-times"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Widgets End -->
+
+
+            <!-- Footer Start -->
+            <div class="container-fluid pt-4 px-4">
+                <div class="bg-secondary rounded-top p-4">
+                    <div class="row">
+                        <div class="col-12 col-sm-6 text-center text-sm-start">
+                            &copy; <a href="#">Your Site Name</a>, All Right Reserved. 
+                        </div>
+                        <div class="col-12 col-sm-6 text-center text-sm-end">
+                            <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                            Designed By <a href="https://htmlcodex.com">HTML Codex</a>
+                            <br>Distributed By: <a href="https://themewagon.com" target="_blank">ThemeWagon</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Footer End -->
+        </div>
+        <!-- Content End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://raw.githubusercontent.com/win877969/webjumpakawan/refs/heads/main/scr/chart.min.js"></script>
+    <script src="https://raw.githubusercontent.com/win877969/webjumpakawan/refs/heads/main/scr/easing.min.js"></script>
+    <script src="https://raw.githubusercontent.com/win877969/webjumpakawan/refs/heads/main/scr/waypoints.min.js"></script>
+    <script src="https://raw.githubusercontent.com/win877969/webjumpakawan/refs/heads/main/scr/owl.carousel.min.js"></script>
+    <script src="https://raw.githubusercontent.com/win877969/webjumpakawan/refs/heads/main/scr/js/moment.min.js"></script>
+    <script src="https://raw.githubusercontent.com/win877969/webjumpakawan/refs/heads/main/scr/moment-timezone.min.js"></script>
+    <script src="https://raw.githubusercontent.com/win877969/webjumpakawan/refs/heads/main/scr/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="https://raw.githubusercontent.com/win877969/webjumpakawan/refs/heads/main/scr/main.js"></script>
+
+
+        
+
+        
+        
        
         
         
     
-    <header22>
-        <nav class="navbar navbar-expand-lg navbar-dark">
-            <div class="navbar-brand22"><a href="http://wa.me/6287861167414"><img src="https://raw.githubusercontent.com/win877969/NS1/refs/heads/main/img/social.png" alt="HTML tutorial" style="width:42px;height:42px;"></a>
-&nbsp; &nbsp;<a href="http://t.me/seaker877 "><img src="https://raw.githubusercontent.com/win877969/NS1/refs/heads/main/img/telegram.png" alt="HTML tutorial" style="width:42px;height:42px;"></a>
-&nbsp; &nbsp;<a href="https://chat.whatsapp.com/L9bbkRbzyozEFJHgGc9pPh"><img src="https://raw.githubusercontent.com/win877969/NS1/refs/heads/main/img/pngwing.com.png" alt="HTML tutorial" style="width:42px;height:42px;"></a>
-</div>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://rg.bmkg.xyz">TSL RUANGGURU</a>
-                    </li>
-<li class="nav-item">
-                        <a class="nav-link" href="https://ilped.bmkg.xyz">TSL ILPED</a>
-                    </li>
-<li class="nav-item">
-                        <a class="nav-link" href="https://kb.bmkg.xyz">TSL BERLAJAR</a>
-                    </li>
-    <li class="nav-item">
-                        <a class="nav-link" href="https://xedu.bmkg.xyz">XL EDUKASI</a>
-                    </li>
- <li class="nav-item">
-                        <a class="nav-link" href="https://vidio.bmkg.xyz">XL VIDIO</a>
-                    </li>
-   <li class="nav-item">
-                        <a class="nav-link" href="https://ifx.bmkg.xyz">XL IFLIX</a>
-                    </li>
-  <li class="nav-item">
-                        <a class="nav-link" href="https://netx.bmkg.xyz">XL NETFLIX</a>
-                    </li>
-          <li class="nav-item">
-                        <a class="nav-link" href="https://xlgm.bmkg.xyz">XL GAME</a>
-                    </li>
-<li class="nav-item">
-                        <a class="nav-link" href="https://wlg.bmkg.xyz">XL WLG</a>
-                    </li>
-<li class="nav-item">
-                        <a class="nav-link" href="https://xcl.bmkg.xyz">XL XCL</a>
-                    </li>
-<li class="nav-item">
-                        <a class="nav-link" href="https://flx.bmkg.xyz">XL FLEX</a>
-                    </li>
-<li class="nav-item">
-                        <a class="nav-link" href="https://xcp.bmkg.xyz">XL XCP/XCV</a>
-                    </li>
-<li class="nav-item">
-                        <a class="nav-link" href="https://ssrl.bmkg.xyz">SUSIROL</a>
-                    </li>
-<li class="nav-item">
-                        <a class="nav-link" href="https://apfn.bmkg.xyz">APP FUN</a>
-                    </li>
 
-                </ul>
-            </div></div>
-        </nav>
-    </header22>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    
+            
 
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <div class="overlay"></div>
-    <div class="container">   <p class="noted877">.<br>.<br>.</p>
-        <div class="card__top">
-          <img src="https://raw.githubusercontent.com/win877969/NS1/refs/heads/main/img/icon.png" alt="VLESS logo" loading="lazy">
-                        </div>
-        
-        
-        <div class="nav-buttons">
-            <button class="button2" onclick="showContent('vless')">LIST VLESS</button>
-            <button class="button2" onclick="showContent('clash')">LIST CLASH</button>        </div>
-            <center>
-            <p class="noted"> Noted: Pastikan untuk memeriksa konfigurasi dengan teliti sebelum digunakan.</p>
-        </center> 
-        
-
-        <div class="config-section">
-        <strong><b>DAFTAR WILCARD:</strong> 
-        <br>» ava.game.naver.com.xvp.bmkg.xyz
-<br>» graph.instagram.com.xvp.bmkg.xyz
-<br>» quiz.int.vidio.com.xvp.bmkg.xyz
-<br>» live.iflix.com.xvp.bmkg.xyz
-<br>» support.zoom.us.xvp.bmkg.xyz
-<br>» blog.webex.com.xvp.bmkg.xyz
-<br>» investors.spotify.com.xvp.bmkg.xyz
-<br>» cache.netflix.com.xvp.bmkg.xyz
-<br>» zaintest.vuclip.com.xvp.bmkg.xyz
-<br>» io.ruangguru.com.xvp.bmkg.xyz</b></DIV>
-        <hr class="config-divider" />
-        <div id="vless" class="content active">
-            ${vlessConfigs}
-        </div>
-        <div id="clash" class="content">
-            ${clashConfigs}
-            </div>
-
-            <footer> ©Develoved by 
-              <a href="https://wa.me/6281335135082"><button class="button877"><img src="https://raw.githubusercontent.com/win877969/NS1/refs/heads/main/img/icon1.png" alt="HTML tutorial" style="width:100px;height:25px;"></button> </a> 
-  </footer>
-     <script>
-               </div>
 
     
 
