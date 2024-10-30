@@ -413,22 +413,11 @@ async function getAllConfigVless(hostName) {
        
     
 
-        header22 {
-            background: rgba(0, 0, 0, 0.9);
-            padding: 10px 20px;
-            box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
-            position: fixed;
-            width: 100%;
-            top: 0;
-            left: 0;
-            z-index: 600;
-        }
+        
  
 
     
     
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
-
         body {
             margin: 0;
             padding: 0;
@@ -479,7 +468,16 @@ async function getAllConfigVless(hostName) {
             from { opacity: 0; transform: translateY(20px); }
             to { opacity: 1; transform: translateY(0); }
         }
-
+       header22 {
+            background: rgba(0, 0, 0, 0.9);
+            padding: 10px 20px;
+            box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 600;
+        }
         .header {
             text-align: center;
             margin-bottom: 40px;
