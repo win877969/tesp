@@ -795,7 +795,12 @@ async function getAllConfigVless(hostName) {
 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="collapse navbar-collapse" id="navbarNav">teys
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://stats.uptimerobot.com/nt5hNzVvVM">Server Monitoring</a>
+                    </li>
+                </ul>
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
                         <a class="nav-link" href="https://stats.uptimerobot.com/nt5hNzVvVM">Server Monitoring</a>
@@ -812,7 +817,7 @@ async function getAllConfigVless(hostName) {
     <div class="container"> <p class="noted877">.</p>
         <div class="card__top">
           <img src="https://raw.githubusercontent.com/win877969/NS1/refs/heads/main/img/icon.png" alt="VLESS logo" loading="lazy">                  
-        </div></div>
+        </div>
   <div class="nav-buttons">
             <button class="button2" onclick="showContent('vless')">LIST VLESS</button>
             <button class="button2" onclick="showContent('clash')">LIST CLASH</button>        </div>
