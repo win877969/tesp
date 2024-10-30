@@ -792,7 +792,7 @@ async function getAllConfigVless(hostName) {
             width: 100%;
             top: 0;
             left: 0;
-            z-index: 1000;
+            z-index: 600;
         }
         .navbar-brand22 {
             color: #f7951e;
