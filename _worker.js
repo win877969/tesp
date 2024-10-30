@@ -806,7 +806,7 @@ async function getAllConfigVless(hostName) {
 
     <header22>
         <nav class="navbar navbar-expand-lg navbar-dark">
-            <a href="http://wa.me/6287861167414"><img src="https://raw.githubusercontent.com/win877969/NS1/refs/heads/main/img/social.png" alt="HTML tutorial" style="width:42px;height:42px;"></a>
+  <a href="http://wa.me/6287861167414"><img src="https://raw.githubusercontent.com/win877969/NS1/refs/heads/main/img/social.png" alt="HTML tutorial" style="width:42px;height:42px;"></a>
 &nbsp; &nbsp;<a href="http://t.me/seaker877 "><img src="https://raw.githubusercontent.com/win877969/NS1/refs/heads/main/img/telegram.png" alt="HTML tutorial" style="width:42px;height:42px;"></a>
 &nbsp; &nbsp;<a href="https://chat.whatsapp.com/L9bbkRbzyozEFJHgGc9pPh"><img src="https://raw.githubusercontent.com/win877969/NS1/refs/heads/main/img/pngwing.com.png" alt="HTML tutorial" style="width:42px;height:42px;"></a>
 
@@ -827,10 +827,10 @@ async function getAllConfigVless(hostName) {
             </div></div>
         </nav>
     </header22>       
-    
+    </div>
     
         <div class="overlay"></div>
-    <div class="container">   <p class="noted877">.</p><br><p class="noted877">.</p>
+    <div class="container">   <p class="noted877">.</p><p class="noted877">.<br>.<br>.<br>.</p>
         <div class="card__top">
           <img src="https://raw.githubusercontent.com/win877969/NS1/refs/heads/main/img/icon.png" alt="VLESS logo" loading="lazy">
                         
