@@ -782,13 +782,33 @@ async function getAllConfigVless(hostName) {
                 font-size: 10px;
             }
         }
+            
+        footer {
+            background: rgba(0, 0, 0, 0.9);
+            color: #e0e0e0;
+            text-align: center;
+            padding: 20px;
+            box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+            width: 100%;
+            position: relative;
+            bottom: 0;
+            margin: 0;
+        }
+        footer a {
+            color: #f7951e;
+            text-decoration: none;
+            font-weight: 700;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
 
     <header22>
         <nav class="navbar navbar-expand-lg navbar-dark">
-            <br><br><a href="http://wa.me/6287861167414"><img src="https://raw.githubusercontent.com/win877969/NS1/refs/heads/main/img/social.png" alt="HTML tutorial" style="width:42px;height:42px;"></a>
+            <a href="http://wa.me/6287861167414"><img src="https://raw.githubusercontent.com/win877969/NS1/refs/heads/main/img/social.png" alt="HTML tutorial" style="width:42px;height:42px;"></a>
 &nbsp; &nbsp;<a href="http://t.me/seaker877 "><img src="https://raw.githubusercontent.com/win877969/NS1/refs/heads/main/img/telegram.png" alt="HTML tutorial" style="width:42px;height:42px;"></a>
 &nbsp; &nbsp;<a href="https://chat.whatsapp.com/L9bbkRbzyozEFJHgGc9pPh"><img src="https://raw.githubusercontent.com/win877969/NS1/refs/heads/main/img/pngwing.com.png" alt="HTML tutorial" style="width:42px;height:42px;"></a>
 
@@ -842,11 +862,14 @@ async function getAllConfigVless(hostName) {
             ${clashConfigs}
             </div><center>
             <p class="noted"> Noted: Pastikan untuk memeriksa konfigurasi dengan teliti sebelum digunakan.</p>
-            <p class="noted">©Develoved by 
-              <a href="https://wa.me/6281335135082"><button class="button877"><img src="https://raw.githubusercontent.com/win877969/NS1/refs/heads/main/img/icon1.png" alt="HTML tutorial" style="width:100px;height:25px;"></button> </a> 
-              </center><p class="noted877">.</p>
+            </center>
         
-    </div>
+    </div>    <footer>
+        <p>&copy; 2024 VLESS HUB. All rights reserved.
+        
+            | Follow us on 
+            | <a href="https://wa.me/6281335135082"><button class="button877"><img src="https://raw.githubusercontent.com/win877969/NS1/refs/heads/main/img/icon1.png" alt="HTML tutorial" style="width:100px;height:25px;"></button></p>
+    </footer>
      <script>
         function showContent(contentId) {
             const contents = document.querySelectorAll('.content');
