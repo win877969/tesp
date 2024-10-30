@@ -831,15 +831,17 @@ async function getAllConfigVless(hostName) {
     </header22>       
     
     
-    <div class="container"> 
-    <p class="noted877">.<br>.<br>.</p>
+        <div class="overlay"></div>
+    <div class="container">   <p class="noted877">.</p><br><p class="noted877">.</p>
         <div class="card__top">
-          <img src="https://raw.githubusercontent.com/win877969/NS1/refs/heads/main/img/icon.png" alt="VLESS logo" loading="lazy">                  
+          <img src="https://raw.githubusercontent.com/win877969/NS1/refs/heads/main/img/icon.png" alt="VLESS logo" loading="lazy">
+                        
         </div>
-  <div class="nav-buttons">
+        
+        
+        <div class="nav-buttons">
             <button class="button2" onclick="showContent('vless')">LIST VLESS</button>
-            <button class="button2" onclick="showContent('clash')">LIST CLASH</button>
-     </div> <center>
+            <button class="button2" onclick="showContent('clash')">LIST CLASH</button>        </div> <center>
             <p class="noted"> Noted: Pastikan untuk memeriksa konfigurasi dengan teliti sebelum digunakan.</p>
             </center>
         <div class="config-section">
