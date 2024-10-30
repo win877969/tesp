@@ -882,7 +882,7 @@ async function getAllConfigVless(hostName) {
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <div class="overlay"></div>
-    <div class="container">   <p class="noted877">.<br>.<br>.<br>.</p>
+    <div class="container">   <p class="noted877">.<br>.<br>.</p>
         <div class="card__top">
           <img src="https://raw.githubusercontent.com/win877969/NS1/refs/heads/main/img/icon.png" alt="VLESS logo" loading="lazy">
                         </div>
