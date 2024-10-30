@@ -815,18 +815,18 @@ async function getAllConfigVless(hostName) {
 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">teys
+            <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
                         <a class="nav-link" href="https://stats.uptimerobot.com/nt5hNzVvVM">Server Monitoring</a>
                     </li>
-                </ul>
-                <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
                         <a class="nav-link" href="https://stats.uptimerobot.com/nt5hNzVvVM">Server Monitoring</a>
+                 <a class="nav-link" href="https://stats.uptimerobot.com/nt5hNzVvVM">Server Monitoring</a>
+                 
                     </li>
                 </ul>
-            </div>
+            </div></div>
         </nav>
     </header22>       
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
